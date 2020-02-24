@@ -3,20 +3,20 @@ export interface Profile {
   packs?: ProfilePack[];
 }
 
-interface ProfileGame {
+export interface ProfileGame {
   name: string;
   timestamp: number;
   url: string;
   version: string;
 }
 
-interface ProfilePack {
+export interface ProfilePack {
   addons: ProfilePackAddon[];
   category: string;
   version: string;
 }
 
-interface ProfilePackAddon {
+export interface ProfilePackAddon {
   name: string;
   timestamp: number;
   url: string;

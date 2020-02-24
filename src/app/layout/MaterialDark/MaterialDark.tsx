@@ -4,9 +4,7 @@ import Material from "../Material/Material";
 const MaterialDark: FunctionComponent = ({ children }) => {
   return (
     <div>
-      <Material>
-        <div>{children}</div>
-      </Material>
+      <Material>{children}</Material>
     </div>
   );
 };

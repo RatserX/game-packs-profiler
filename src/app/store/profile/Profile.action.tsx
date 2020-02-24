@@ -3,7 +3,7 @@ import { Profile } from "../../helpers/Interface.helper";
 
 const setProfile = (filepath = "profile.json"): ProfileAction => {
   const profile: Profile = require(`../../files/profile/${filepath}`);
-  
+
   return {
     type: ProfileActionType.SetProfile,
     payload: profile
