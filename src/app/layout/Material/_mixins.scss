@@ -1,0 +1,30 @@
+@import "./variables";
+
+@mixin material {
+    :root {
+        --primary: #{$primary};
+        --primary-variant: #{$primary-variant};
+        --secondary: #{$secondary};
+        --secondary-variant: #{$secondary-variant};
+        --background: #{$background};
+        --surface: #{$surface};
+        --error: #{$error};
+        --on-primary: #{$on-primary};
+        --on-secondary: #{$on-secondary};
+        --on-background: #{$on-background};
+        --on-surface: #{$on-surface};
+        --on-error: #{$on-error};
+    }
+    
+    html {
+        background-color: $background;
+        background-size: cover;
+    }
+    
+    .container {
+        min-height: 1000px;
+        margin: 50px 300px;
+        background-color: $on-background;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,18 @@
+@import "./variables";
+
+@mixin default {
+    :root {
+        --primary: #{$primary};
+        --primary-variant: #{$primary-variant};
+        --secondary: #{$secondary};
+        --secondary-variant: #{$secondary-variant};
+        --background: #{$background};
+        --surface: #{$surface};
+        --error: #{$error};
+        --on-primary: #{$on-primary};
+        --on-secondary: #{$on-secondary};
+        --on-background: #{$on-background};
+        --on-surface: #{$on-surface};
+        --on-error: #{$on-error};
+    }
+}
