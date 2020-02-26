@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { connect, ConnectedProps } from "react-redux";
 import { State } from "../../store/Store";
 import { ProfilePack } from "../../helpers/Interface.helper";
 import HomePack from "../HomePack/HomePack.component";
+import "./Home.style.scss";
 
 const mapStateToProperties = (state: State) => ({
   profileState: state.profile
@@ -21,8 +22,8 @@ const HomeComponent = (props: Props) => {
   console.log("were home");
   console.log(profileState);
   return (
-    <Container>
-      <Row>
+    <div>
+      <Row className="game-container">
         <div>{profileState.profile?.game?.name}</div>
         <div>{profileState.profile?.game?.url}</div>
         <div>{profileState.profile?.game?.version}</div>
@@ -34,7 +35,7 @@ const HomeComponent = (props: Props) => {
           }
         )}
       </div>
-    </Container>
+    </div>
   );
 };
 
