@@ -1,5 +1,10 @@
 @import "./variables";
 
+@mixin mdc-typography-styles($font-size) {
+    font-family: unquote("Roboto");
+    font-size: $font-size + px;
+}
+
 @mixin material {
     :root {
         --primary: #{$primary};
@@ -14,6 +19,194 @@
         --on-background: #{$on-background};
         --on-surface: #{$on-surface};
         --on-error: #{$on-error};
+    }
+
+    .background-color-primary {
+        background-color: $primary;
+    }
+
+    .background-color-primary-variant {
+        background-color: $primary-variant;
+    }
+
+    .background-color-secondary {
+        background-color: $secondary;
+    }
+
+    .background-color-secondary-variant {
+        background-color: $secondary-variant;
+    }
+
+    .background-color-background {
+        background-color: $background;
+    }
+
+    .background-color-surface {
+        background-color: $surface;
+    }
+
+    .background-color-error {
+        background-color: $error;
+    }
+
+    .background-color-on-primary {
+        background-color: $on-primary;
+    }
+
+    .background-color-on-secondary {
+        background-color: $on-secondary;
+    }
+
+    .background-color-on-background {
+        background-color: $on-background;
+    }
+
+    .background-color-on-surface {
+        background-color: $on-surface;
+    }
+
+    .background-color-on-error {
+        background-color: $on-error;
+    }
+
+    .color-primary {
+        color: $primary;
+    }
+
+    .color-primary-variant {
+        color: $primary-variant;
+    }
+
+    .color-secondary {
+        color: $secondary;
+    }
+
+    .color-secondary-variant {
+        color: $secondary-variant;
+    }
+
+    .color-background {
+        color: $background;
+    }
+
+    .color-surface {
+        color: $surface;
+    }
+
+    .color-error {
+        color: $error;
+    }
+
+    .color-on-primary {
+        color: $on-primary;
+    }
+
+    .color-on-secondary {
+        color: $on-secondary;
+    }
+
+    .color-on-background {
+        color: $on-background;
+    }
+
+    .color-on-surface {
+        color: $on-surface;
+    }
+
+    .color-on-error {
+        color: $on-error;
+    }
+
+    .mdc-typography-styles-headline1 {
+        @include mdc-typography-styles(96);
+    };
+    
+    .mdc-typography-styles-headline2 {
+        @include mdc-typography-styles(60);
+    };
+    
+    .mdc-typography-styles-headline3 {
+        @include mdc-typography-styles(48);
+    };
+    
+    .mdc-typography-styles-headline4 {
+        @include mdc-typography-styles(34);
+    };
+    
+    .mdc-typography-styles-headline5 {
+        @include mdc-typography-styles(24);
+    };
+    
+    .mdc-typography-styles-headline6 {
+        @include mdc-typography-styles(20);
+    };
+    
+    .mdc-typography-styles-body1 {
+        @include mdc-typography-styles(16);
+    };
+    
+    .mdc-typography-styles-body2 {
+        @include mdc-typography-styles(14);
+    };
+    
+    .mdc-typography-styles-subtitle1 {
+        @include mdc-typography-styles(16);
+    };
+    
+    .mdc-typography-styles-subtitle2 {
+        @include mdc-typography-styles(14);
+    };
+    
+    .mdc-typography-styles-button {
+        @include mdc-typography-styles(14);
+    };
+    
+    .mdc-typography-styles-overline {
+        @include mdc-typography-styles(10);
+    };
+    
+    .mdc-typography-styles-caption {
+        @include mdc-typography-styles(12);
+    };
+
+    .border-radius {
+        border-radius: 4px;
+    }
+
+    .border-radius-pill {
+        border-radius: 50%;
+    }
+
+    .edge-left {
+        padding-left: 32px;
+    }
+
+    .edge-right {
+        padding-right: 32px;
+    }
+
+    .spacing-left {
+        padding-left: 8px;
+    }
+
+    .spacing-right {
+        padding-right: 8px;
+    }
+
+    .status-bar-height {
+        height: 24px;
+    }
+
+    .element-spacing {
+        padding: 16px;
+    }
+
+    .app-bar-height {
+        height: 56px;
+    }
+
+    .list-item-height {
+        height: 88px;
     }
     
     html {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { connect, ConnectedProps } from "react-redux";
 import { State } from "../../store/Store";
 import { ProfilePack } from "../../helpers/Interface.helper";
@@ -18,15 +18,16 @@ type Props = ConnectorProps & {};
 
 const HomeComponent = (props: Props) => {
   const { profileState } = props;
-
-  console.log("were home");
-  console.log(profileState);
+  
   return (
     <div>
-      <Row className="game-container">
-        <div>{profileState.profile?.game?.name}</div>
-        <div>{profileState.profile?.game?.url}</div>
-        <div>{profileState.profile?.game?.version}</div>
+      <div className="status-bar-height"></div>
+      <Row className="element-spacing">
+        <Col className="my-auto app-bar-spacing border-radius game-container">
+          <div className="mdc-typography-styles-headline1">{profileState.profile?.game?.name}</div>
+          <div>{profileState.profile?.game?.url}</div>
+          <div>{profileState.profile?.game?.version}</div>
+        </Col>
       </Row>
       <div>
         {profileState.profile?.packs?.map(
