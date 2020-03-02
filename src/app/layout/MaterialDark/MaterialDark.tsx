@@ -1,12 +1,39 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
+import { ThemeProvider, createMuiTheme, CssBaseline } from "@material-ui/core";
 import Material from "../Material/Material";
 
-const MaterialDark: FunctionComponent = ({ children }) => {
+type ElementProps = {
+  children?: JSX.Element;
+};
+
+type RouterProps = {
+  children?: JSX.Element;
+};
+
+const Element = ({ children }: ElementProps) => {
+  const theme = createMuiTheme({
+    palette: {
+      type: "dark"
+    }
+  });
+
   return (
     <div>
-      <Material>{children}</Material>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
+          <Material.Element>{children}</Material.Element>
+        </CssBaseline>
+      </ThemeProvider>
     </div>
   );
 };
 
-export default MaterialDark;
+const Router = ({ children }: RouterProps) => {
+  return (
+    <div>
+      <Material.Router>{children}</Material.Router>
+    </div>
+  );
+};
+
+export default { Element, Router };

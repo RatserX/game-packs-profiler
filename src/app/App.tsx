@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
-import Layout from "./layout/Layout";
-import Router from "./Router";
 import environment from "../environment/environment";
 import { State } from "./store/Store";
 import { setProfile } from "./store/profile/Profile.action";
-import { isObjectNullOrEmpty } from "./helpers/Extension.helper";
+import { isObjectNullOrEmpty } from "./helpers/Function.helper";
+import Layout from "./layout/Layout";
 
 const mapStateToProperties = (state: State) => ({
   profileState: state.profile
@@ -30,11 +29,7 @@ const AppComponent = (props: Props) => {
     }
   }, [profileState, setProfile]);
 
-  return (
-    <Layout layoutType={environment.theme}>
-      <Router />
-    </Layout>
-  );
+  return <Layout themeType={environment.theme} />;
 };
 
 const App = appConnector(AppComponent);

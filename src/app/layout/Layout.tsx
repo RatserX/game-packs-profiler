@@ -1,30 +1,45 @@
-import React, { FunctionComponent, ReactNode } from "react";
+import React from "react";
 import Default from "./Default/Default";
 import MaterialDark from "./MaterialDark/MaterialDark";
 import MaterialLight from "./MaterialLight/MaterialLight";
 
-enum LayoutType {
+enum ThemeType {
   Default,
   MaterialDark,
   MaterialLight
 }
 
-interface LayoutProps {
-  children?: ReactNode;
-  layoutType?: LayoutType;
-}
+type LayoutProps = {
+  children?: JSX.Element;
+  themeType?: ThemeType;
+};
 
-const Layout: FunctionComponent<LayoutProps> = ({ layoutType, children }) => {
-  switch (layoutType) {
-    case LayoutType.MaterialDark:
+const Layout = ({ themeType, children }: LayoutProps) => {
+  switch (themeType) {
+    case ThemeType.MaterialDark:
       require("./MaterialDark/_styles.scss");
-      return <MaterialDark>{children}</MaterialDark>;
-    case LayoutType.MaterialLight:
+
+      return (
+        <MaterialDark.Element>
+          <MaterialDark.Router>{children}</MaterialDark.Router>
+        </MaterialDark.Element>
+      );
+    case ThemeType.MaterialLight:
       require("./MaterialLight/_styles.scss");
-      return <MaterialLight>{children}</MaterialLight>;
+
+      return (
+        <MaterialLight.Element>
+          <MaterialLight.Router>{children}</MaterialLight.Router>
+        </MaterialLight.Element>
+      );
     default:
       require("./Default/_styles.scss");
-      return <Default>{children}</Default>;
+
+      return (
+        <Default.Element>
+          <Default.Router>{children}</Default.Router>
+        </Default.Element>
+      );
   }
 };
 
@@ -38,5 +53,5 @@ Layout.propTypes = {
   children: PropTypes.node
 }; */
 
-export { LayoutType };
+export { ThemeType };
 export default Layout;

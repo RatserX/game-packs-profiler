@@ -1,8 +1,15 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-// tratar de llamar el import DENTRO de un link rel porque ese import hace que se llame desde todo el codigo
+type ElementProps = {
+  children?: JSX.Element;
+};
 
-const Default: FunctionComponent = ({ children }) => {
+type RouterProps = {
+  children?: JSX.Element;
+};
+
+const Element = ({ children }: ElementProps) => {
   return (
     <div>
       <div>{children}</div>
@@ -10,4 +17,16 @@ const Default: FunctionComponent = ({ children }) => {
   );
 };
 
-export default Default;
+const Router = ({ children }: RouterProps) => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" />
+        </Switch>
+      </BrowserRouter>
+      {children}
+    </div>
+  );
+};
+export default { Element, Router };

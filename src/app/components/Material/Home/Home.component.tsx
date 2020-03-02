@@ -1,8 +1,8 @@
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
-import { Row, Col } from "react-bootstrap";
 import { connect, ConnectedProps } from "react-redux";
-import { State } from "../../store/Store";
-import { ProfilePack } from "../../helpers/Interface.helper";
+import { State } from "../../../store/Store";
+import { ProfilePack } from "../../../helpers/Interface.helper";
 import HomePack from "../HomePack/HomePack.component";
 import "./Home.style.scss";
 
@@ -18,17 +18,16 @@ type Props = ConnectorProps & {};
 
 const HomeComponent = (props: Props) => {
   const { profileState } = props;
-  
+
   return (
     <div>
-      <div className="status-bar-height"></div>
-      <Row className="element-spacing">
-        <Col className="my-auto app-bar-spacing border-radius game-container">
-          <div className="mdc-typography-styles-headline1">{profileState.profile?.game?.name}</div>
-          <div>{profileState.profile?.game?.url}</div>
-          <div>{profileState.profile?.game?.version}</div>
-        </Col>
-      </Row>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography>{profileState.profile?.game?.name}</Typography>
+          <Typography>{profileState.profile?.game?.url}</Typography>
+          <Typography>{profileState.profile?.game?.version}</Typography>
+        </Toolbar>
+      </AppBar>
       <div>
         {profileState.profile?.packs?.map(
           (value: ProfilePack, index: number, array: ProfilePack[]) => {

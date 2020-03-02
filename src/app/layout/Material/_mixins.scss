@@ -208,20 +208,8 @@
     .list-item-height {
         height: 88px;
     }
-    
-    html {
-        background-color: $background;
-        background-size: cover;
-    }
-    
-    .material-container {
-        background-color: $background;
-        background-size: cover;
-    
-        .container {
-            min-height: 1000px;
-            margin: 50px auto;
-            background-color: $on-background;
-        }
+
+    a:active, a:hover, a:link, a:visited {
+        text-decoration: none;
     }
 }

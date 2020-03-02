@@ -1,9 +1,9 @@
-import { LayoutType } from "../app/layout/Layout";
+import { ThemeType } from "../app/layout/Layout";
 
 const environment = {
   production: false,
   profile: "profile.json",
-  theme: LayoutType.MaterialDark
+  theme: ThemeType.MaterialDark
 };
 
 export default environment;
