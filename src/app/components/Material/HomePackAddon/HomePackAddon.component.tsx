@@ -13,7 +13,10 @@ import {
 import { GetApp, ExpandMore } from "@material-ui/icons";
 import { connect, ConnectedProps } from "react-redux";
 import { ProfilePackAddon } from "../../../helpers/Interface.helper";
-import { timestampValueToDate, isObjectNullOrEmpty } from "../../../helpers/Function.helper";
+import {
+  timestampValueToDate,
+  isObjectNullOrEmpty
+} from "../../../helpers/Function.helper";
 import { State } from "../../../store/Store";
 import {
   setArray,
@@ -46,7 +49,11 @@ const HomePackAddonComponent = (props: Props) => {
   const date = timestampValueToDate(addon.timestamp);
 
   const isCardExpanded = () => {
-    return expandState.expand?.array[id]?.isEnabled;
+    const isEnabled = expandState.expand?.array[id]?.isEnabled || true;
+
+    console.log(isEnabled);
+
+    return true;
   };
 
   const handleDescriptionExpandClick = () => {
@@ -54,6 +61,7 @@ const HomePackAddonComponent = (props: Props) => {
   };
 
   useEffect(() => {
+    console.log("setExpand");
     if (isObjectNullOrEmpty(expandState)) {
       setExpand({
         array: {

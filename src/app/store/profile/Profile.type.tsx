@@ -6,12 +6,12 @@ export enum ProfileActionType {
 }
 
 interface SetProfileAction {
-  type: typeof ProfileActionType.SetProfile;
+  type: "SET_PROFILE";
   payload: Profile;
 }
 
 interface SetFilepathAction {
-  type: typeof ProfileActionType.SetFilepath;
+  type: "SET_FILEPATH";
   payload: string;
 }
 

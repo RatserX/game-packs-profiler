@@ -6,7 +6,7 @@ const setArray = (
   arrayValue: ExpandArrayValue
 ): ExpandAction => {
   return {
-    type: ExpandActionType.SetArray,
+    type: ExpandActionType.SET_ARRAY,
     payload: {
       arrayKey,
       arrayValue
@@ -18,8 +18,11 @@ const setArrayIsEnabled = (
   arrayKey: string,
   isEnabled: boolean
 ): ExpandAction => {
+  console.log("setArrayIsEnabledAction");
+  console.log(arrayKey);
+  console.log(isEnabled);
   return {
-    type: ExpandActionType.SetArrayIsEnabled,
+    type: ExpandActionType.SET_ARRAY_IS_ENABLED,
     payload: {
       arrayKey,
       arrayValue: {
@@ -30,8 +33,10 @@ const setArrayIsEnabled = (
 };
 
 const setExpand = (expand: Expand): ExpandAction => {
+  console.log("setExpandAction");
+  console.log(expand);
   return {
-    type: ExpandActionType.SetExpand,
+    type: ExpandActionType.SET_EXPAND,
     payload: expand
   };
 };

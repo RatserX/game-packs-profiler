@@ -24,6 +24,7 @@ const AppComponent = (props: Props) => {
   const { profileState, setProfile } = props;
 
   useEffect(() => {
+    debugger;
     if (isObjectNullOrEmpty(profileState)) {
       setProfile("profile.json");
     }
