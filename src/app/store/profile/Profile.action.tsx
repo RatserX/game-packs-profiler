@@ -1,20 +1,20 @@
-import { ProfileActionType, ProfileAction } from "./Profile.type";
-import { Profile } from "../../helpers/Interface.helper";
+import { ProfileAction, SET_CONFIGURATION, SET_FILEPATH } from "./Profile.type";
+import { Configuration } from "../../helpers/Interface.helper";
 
-const setProfile = (filepath = "profile.json"): ProfileAction => {
-  const profile: Profile = require(`../../files/profile/${filepath}`);
+const setConfiguration = (filepath = "configuration.json"): ProfileAction => {
+  const configuration: Configuration = require(`../../files/profile/${filepath}`);
 
   return {
-    type: ProfileActionType.SetProfile,
-    payload: profile
+    type: SET_CONFIGURATION,
+    configuration
   };
 };
 
 const setFilepath = (filepath: string): ProfileAction => {
   return {
-    type: ProfileActionType.SetFilepath,
-    payload: filepath
+    type: SET_FILEPATH,
+    filepath
   };
 };
 
-export { setProfile, setFilepath };
+export { setConfiguration, setFilepath };

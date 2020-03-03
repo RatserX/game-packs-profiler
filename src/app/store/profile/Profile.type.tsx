@@ -1,22 +1,21 @@
-import { Profile } from "../../helpers/Interface.helper";
+import { Configuration } from "../../helpers/Interface.helper";
 
-export enum ProfileActionType {
-  SetFilepath,
-  SetProfile
-}
-
-interface SetProfileAction {
-  type: "SET_PROFILE";
-  payload: Profile;
-}
+export const SET_CONFIGURATION = "PROFILE_1";
+export const SET_FILEPATH = "PROFILE_2";
 
 interface SetFilepathAction {
-  type: "SET_FILEPATH";
-  payload: string;
+  type: typeof SET_FILEPATH;
+  filepath: string;
 }
 
-export type ProfileAction = SetProfileAction | SetFilepathAction;
+interface SetConfigurationAction {
+  type: typeof SET_CONFIGURATION;
+  configuration: Configuration;
+}
+
+export type ProfileAction = SetFilepathAction | SetConfigurationAction;
 
 export interface ProfileState {
-  profile?: Profile;
+  filepath: string;
+  configuration: Configuration;
 }

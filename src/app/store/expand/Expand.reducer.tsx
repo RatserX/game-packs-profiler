@@ -1,7 +1,12 @@
-import { ExpandState, ExpandAction, ExpandActionType } from "./Expand.type";
+import {
+  ExpandState,
+  ExpandAction,
+  SET_INSTANCE,
+  SET_INSTANCE_IS_ENABLED
+} from "./Expand.type";
 
 const initialState: ExpandState = {
-  array: {}
+  instance: {}
 };
 
 const ExpandReducer = (
@@ -9,42 +14,21 @@ const ExpandReducer = (
   action: ExpandAction
 ): ExpandState => {
   switch (action.type) {
-    case ExpandActionType.SET_ARRAY:
+    case SET_INSTANCE:
       return {
-        array: {
-          [action.payload.arrayKey]: action.payload.arrayValue
-        },
-        ...state
-      };
-    case ExpandActionType.SET_ARRAY_IS_ENABLED:
-      console.log("setArrayIsEnabledReducer");
-      console.log({
-        expand: {
-          array: {
-            [action.payload.arrayKey]: {
-              isEnabled: action.payload.arrayValue?.isEnabled
-            },
-            ...state.expand?.array
-          }
-        }
-      });
-      console.log(action.payload);
-      console.log(state.expand);
-      return {
-        expand: {
-          array: {
-            [action.payload.arrayKey]: {
-              isEnabled: action.payload.arrayValue?.isEnabled
-            },
-            ...state.expand?.array
-          }
+        ...state,
+        instance: {
+          [action.instanceKey]: action.instanceValue
         }
       };
-    case ExpandActionType.SET_EXPAND:
-      console.log("setExpandReducer");
-      console.log(action.payload);
+    case SET_INSTANCE_IS_ENABLED:
       return {
-        expand: action.payload
+        ...state,
+        instance: {
+          [action.instanceKey]: {
+            isEnabled: action.instanceValueIsEnabled
+          }
+        }
       };
     default:
       return state;

@@ -6,19 +6,20 @@ import {
   Card,
   CardContent,
   CardHeader,
-  IconButton
+  IconButton,
+  Box
 } from "@material-ui/core";
 import { Info } from "@material-ui/icons";
 import {
-  ProfilePack,
-  ProfilePackAddon
+  ConfigurationPack,
+  ConfigurationPackAddon
 } from "../../../helpers/Interface.helper";
 import HomePackAddon from "../HomePackAddon/HomePackAddon.component";
 import "./HomePack.style.scss";
 
 type Props = {
   key: string;
-  pack: ProfilePack;
+  pack: ConfigurationPack;
 };
 
 const HomePack = (props: Props) => {
@@ -26,40 +27,43 @@ const HomePack = (props: Props) => {
 
   return (
     <div>
-      <Grid>
-        <Card variant="outlined">
-          <CardHeader
-            action={
-              <IconButton href={pack.url} target="_blank">
-                <Info />
-              </IconButton>
+      <Box mt={2}>
+        <Grid>
+          <Card variant="outlined">
+            <CardHeader
+              action={
+                <IconButton href={pack.url} target="_blank">
+                  <Info />
+                </IconButton>
+              }
+              subheader={pack.version}
+              subheaderTypographyProps={{
+                variant: "body2"
+              }}
+              title={pack.name}
+              titleTypographyProps={{
+                variant: "body2"
+              }}
+            />
+            <CardContent>
+              <Typography>{pack.description}</Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Box>
+      <Box mt={2}>
+        <Grid container spacing={2}>
+          {pack.addons?.map(
+            (
+              value: ConfigurationPackAddon,
+              index: number,
+              array: ConfigurationPackAddon[]
+            ) => {
+              return <HomePackAddon addon={value} key={index} id={`${index}`} />;
             }
-            subheader={pack.version}
-            subheaderTypographyProps={{
-              variant: "body2"
-            }}
-            title={pack.name}
-            titleTypographyProps={{
-              variant: "body2"
-            }}
-          />
-          <CardContent>
-            <Typography>{pack.description}</Typography>
-          </CardContent>
-        </Card>
-      </Grid>
-      <Divider variant="fullWidth" />
-      <Grid container spacing={1}>
-        {pack.addons?.map(
-          (
-            value: ProfilePackAddon,
-            index: number,
-            array: ProfilePackAddon[]
-          ) => {
-            return <HomePackAddon addon={value} key={index} id={`${index}`} />;
-          }
-        )}
-      </Grid>
+          )}
+        </Grid>
+      </Box>
     </div>
   );
 };

@@ -1,10 +1,11 @@
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, Box, Grid, Card, CardHeader, IconButton, CardContent, Paper } from "@material-ui/core";
 import React from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { State } from "../../../store/Store";
-import { ProfilePack } from "../../../helpers/Interface.helper";
+import { ConfigurationPack } from "../../../helpers/Interface.helper";
 import HomePack from "../HomePack/HomePack.component";
 import "./Home.style.scss";
+import { Info } from "@material-ui/icons";
 
 const mapStateToProperties = (state: State) => ({
   profileState: state.profile
@@ -21,16 +22,35 @@ const HomeComponent = (props: Props) => {
 
   return (
     <div>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography>{profileState.profile?.game?.name}</Typography>
-          <Typography>{profileState.profile?.game?.url}</Typography>
-          <Typography>{profileState.profile?.game?.version}</Typography>
-        </Toolbar>
-      </AppBar>
+      <Box mt={2}>
+        <Paper elevation={3} square variant="elevation">
+          <CardHeader
+            action={
+              <IconButton href={profileState.configuration.game?.url || "#"} target="_blank">
+                <Info />
+              </IconButton>
+            }
+            subheader={profileState.configuration.game?.version}
+            subheaderTypographyProps={{
+              variant: "body2"
+            }}
+            title={profileState.configuration.game?.name}
+            titleTypographyProps={{
+              variant: "body2"
+            }}
+          />
+          <CardContent>
+            <Typography>{profileState.configuration.game?.name}</Typography>
+          </CardContent>
+        </Paper>
+      </Box>
       <div>
-        {profileState.profile?.packs?.map(
-          (value: ProfilePack, index: number, array: ProfilePack[]) => {
+        {profileState.configuration.packs?.map(
+          (
+            value: ConfigurationPack,
+            index: number,
+            array: ConfigurationPack[]
+          ) => {
             return <HomePack key={`${index}`} pack={value} />;
           }
         )}

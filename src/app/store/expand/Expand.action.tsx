@@ -1,44 +1,30 @@
-import { ExpandActionType, ExpandAction } from "./Expand.type";
-import { Expand, ExpandArrayValue } from "../../helpers/Interface.helper";
+import {
+  ExpandAction,
+  SET_INSTANCE,
+  SET_INSTANCE_IS_ENABLED
+} from "./Expand.type";
+import { InstanceValue } from "../../helpers/Interface.helper";
 
-const setArray = (
-  arrayKey: string,
-  arrayValue: ExpandArrayValue
+const setInstance = (
+  instanceKey: string,
+  instanceValue: InstanceValue
 ): ExpandAction => {
   return {
-    type: ExpandActionType.SET_ARRAY,
-    payload: {
-      arrayKey,
-      arrayValue
-    }
+    type: SET_INSTANCE,
+    instanceKey,
+    instanceValue
   };
 };
 
-const setArrayIsEnabled = (
-  arrayKey: string,
-  isEnabled: boolean
+const setInstanceIsEnabled = (
+  instanceKey: string,
+  instanceValueIsEnabled: boolean
 ): ExpandAction => {
-  console.log("setArrayIsEnabledAction");
-  console.log(arrayKey);
-  console.log(isEnabled);
   return {
-    type: ExpandActionType.SET_ARRAY_IS_ENABLED,
-    payload: {
-      arrayKey,
-      arrayValue: {
-        isEnabled
-      }
-    }
+    type: SET_INSTANCE_IS_ENABLED,
+    instanceKey,
+    instanceValueIsEnabled
   };
 };
 
-const setExpand = (expand: Expand): ExpandAction => {
-  console.log("setExpandAction");
-  console.log(expand);
-  return {
-    type: ExpandActionType.SET_EXPAND,
-    payload: expand
-  };
-};
-
-export { setArray, setArrayIsEnabled, setExpand };
+export { setInstance, setInstanceIsEnabled };

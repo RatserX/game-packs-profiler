@@ -8,31 +8,33 @@ import {
   CardHeader,
   IconButton,
   CardActions,
-  Collapse
+  Collapse,
+  Avatar,
+  makeStyles,
+  Theme,
+  createStyles
 } from "@material-ui/core";
 import { GetApp, ExpandMore } from "@material-ui/icons";
 import { connect, ConnectedProps } from "react-redux";
-import { ProfilePackAddon } from "../../../helpers/Interface.helper";
 import {
   timestampValueToDate,
   isObjectNullOrEmpty
 } from "../../../helpers/Function.helper";
 import { State } from "../../../store/Store";
 import {
-  setArray,
-  setArrayIsEnabled,
-  setExpand
+  setInstance,
+  setInstanceIsEnabled
 } from "../../../store/expand/Expand.action";
 import "./HomePackAddon.style.scss";
+import { ConfigurationPackAddon } from "../../../helpers/Interface.helper";
 
 const mapStateToProperties = (state: State) => ({
   expandState: state.expand
 });
 
 const mapDispatchToProps = {
-  setArray,
-  setArrayIsEnabled,
-  setExpand
+  setInstance,
+  setInstanceIsEnabled
 };
 
 const appConnector = connect(mapStateToProperties, mapDispatchToProps);
@@ -40,47 +42,45 @@ const appConnector = connect(mapStateToProperties, mapDispatchToProps);
 type ConnectorProps = ConnectedProps<typeof appConnector>;
 
 type Props = ConnectorProps & {
-  addon: ProfilePackAddon;
+  addon: ConfigurationPackAddon;
   id: string;
 };
 
+const useStyles = makeStyles((theme: Theme) => createStyles({
+  collapse: {
+    transform: "rotate(0deg)",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expand: {
+    transform: "rotate(180deg)",
+  },
+}));
+
 const HomePackAddonComponent = (props: Props) => {
-  const { expandState, setArrayIsEnabled, addon, id } = props;
+  const { expandState, setInstanceIsEnabled, addon, id } = props;
+  const classes = useStyles();
   const date = timestampValueToDate(addon.timestamp);
 
-  const isCardExpanded = () => {
-    const isEnabled = expandState.expand?.array[id]?.isEnabled || true;
-
-    console.log(isEnabled);
-
-    return true;
-  };
-
-  const handleDescriptionExpandClick = () => {
-    setArrayIsEnabled(id, !isCardExpanded());
-  };
-
   useEffect(() => {
-    console.log("setExpand");
-    if (isObjectNullOrEmpty(expandState)) {
-      setExpand({
-        array: {
-          [id]: {
-            isEnabled: false
-          }
-        }
+    if (isObjectNullOrEmpty(expandState.instance)) {
+      setInstance(id, {
+        isEnabled: false
       });
     }
-  }, [expandState, id, setExpand]);
+  }, [expandState, id]);
+
+  const handleDescriptionExpandClick = () => {
+    setInstanceIsEnabled(id, !expandState.instance[id]?.isEnabled);
+  };
 
   return (
-    <Grid item xs={12} sm={6} md={3} xl={2}>
+    <Grid item xs={12} sm={6} md={4} xl={3}>
       <Card variant="outlined">
         <CardHeader
-          action={
-            <IconButton href={addon.url} target="_blank">
-              <GetApp />
-            </IconButton>
+          avatar={
+            <Avatar src={addon.image}></Avatar>
           }
           subheader={date}
           subheaderTypographyProps={{
@@ -91,17 +91,12 @@ const HomePackAddonComponent = (props: Props) => {
             variant: "body2"
           }}
         />
-        <CardMedia
-          alt="addon"
-          component="img"
-          image="https://material-ui.com/static/images/grid-list/breakfast.jpg"
-        />
         <CardActions disableSpacing>
-          <IconButton href={addon.url} target="_blank">
+          <IconButton href={addon.url || "#"} target="_blank">
             <GetApp />
           </IconButton>
           <IconButton
-            aria-expanded={isCardExpanded()}
+            className={expandState.instance[id]?.isEnabled ? classes.expand : classes.collapse}
             onClick={handleDescriptionExpandClick}
             style={{
               marginLeft: "auto"
@@ -110,9 +105,9 @@ const HomePackAddonComponent = (props: Props) => {
             <ExpandMore />
           </IconButton>
         </CardActions>
-        <Collapse in={isCardExpanded()} timeout="auto" unmountOnExit>
+        <Collapse in={expandState.instance[id]?.isEnabled} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography paragraph>{addon.description}</Typography>
+            <Typography component="p" color="textSecondary" paragraph variant="body2">{addon.description}</Typography>
           </CardContent>
         </Collapse>
       </Card>

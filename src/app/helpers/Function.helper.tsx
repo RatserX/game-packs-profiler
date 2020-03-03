@@ -22,8 +22,6 @@ const timestampValueToDate = (
 ) => {
   const date = new Date(value * 1000);
 
-  console.log(date);
-
   return timestampDateToDate(date, locales, options);
 };
 

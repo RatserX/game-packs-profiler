@@ -1,39 +1,38 @@
-export interface Expand {
-  array: ExpandArray;
+export interface Instance {
+  [key: string]: InstanceValue;
 }
 
-export interface ExpandArray {
-  [key: string]: ExpandArrayValue;
-}
-
-export interface ExpandArrayValue {
+export interface InstanceValue {
   isEnabled: boolean;
 }
 
-export interface Profile {
-  game?: ProfileGame;
-  packs?: ProfilePack[];
+export interface Configuration {
+  game?: ConfigurationGame;
+  packs?: ConfigurationPack[];
 }
 
-export interface ProfileGame {
+export interface ConfigurationGame {
   description: string;
+  image: string;
   name: string;
   timestamp: number;
   url: string;
   version: string;
 }
 
-export interface ProfilePack {
-  addons: ProfilePackAddon[];
+export interface ConfigurationPack {
+  addons: ConfigurationPackAddon[];
   description: string;
+  image: string;
   name: string;
   timestamp: number;
   url: string;
   version: string;
 }
 
-export interface ProfilePackAddon {
+export interface ConfigurationPackAddon {
   description: string;
+  image: string;
   name: string;
   timestamp: number;
   url: string;
