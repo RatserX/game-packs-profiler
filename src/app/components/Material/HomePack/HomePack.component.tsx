@@ -59,7 +59,9 @@ const HomePack = (props: Props) => {
               index: number,
               array: ConfigurationPackAddon[]
             ) => {
-              return <HomePackAddon addon={value} key={index} id={`${index}`} />;
+              return (
+                <HomePackAddon addon={value} key={index} id={`${index}`} />
+              );
             }
           )}
         </Grid>

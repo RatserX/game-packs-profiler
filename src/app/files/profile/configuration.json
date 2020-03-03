@@ -37,5 +37,13 @@
             "url": "http://www.google.com",
             "version": "11.0"
         }
+    ],
+    "servers": [
+        {
+            "address": "",
+            "port": 1000,
+            "title": "Minecraft Server",
+            "subtitle": "A server for the game Minecraft"
+        }
     ]
 }
