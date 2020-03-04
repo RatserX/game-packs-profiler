@@ -9,6 +9,7 @@ export interface InstanceValue {
 export interface Configuration {
   game?: ConfigurationGame;
   packs?: ConfigurationPack[];
+  servers?: ConfigurationServer[];
 }
 
 export interface ConfigurationGame {
@@ -22,6 +23,7 @@ export interface ConfigurationGame {
 
 export interface ConfigurationPack {
   addons: ConfigurationPackAddon[];
+  instructions: string[];
   description: string;
   image: string;
   name: string;
@@ -37,4 +39,12 @@ export interface ConfigurationPackAddon {
   timestamp: number;
   url: string;
   version: string;
+}
+
+export interface ConfigurationServer {
+  address: string;
+  description: string;
+  image: string;
+  name: string;
+  port: number;
 }

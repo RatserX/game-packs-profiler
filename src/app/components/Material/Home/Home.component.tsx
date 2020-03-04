@@ -4,30 +4,30 @@ import {
   Typography,
   Box,
   Grid,
-  Card,
-  CardHeader,
   IconButton,
-  CardContent,
-  Paper,
   Avatar,
-  Link,
   Collapse,
   makeStyles,
   createStyles,
-  Theme
+  Theme,
+  Divider
 } from "@material-ui/core";
 import { Info, ExpandMore } from "@material-ui/icons";
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
+import "./Home.style.scss";
+import { isObjectNullOrEmpty } from "../../../helpers/Function.helper";
+import {
+  ConfigurationPack,
+  ConfigurationServer
+} from "../../../helpers/Interface.helper";
 import { State } from "../../../store/Store";
-import { ConfigurationPack } from "../../../helpers/Interface.helper";
 import {
   setInstance,
   setInstanceIsEnabled
 } from "../../../store/expand/Expand.action";
 import HomePack from "../HomePack/HomePack.component";
-import "./Home.style.scss";
-import { isObjectNullOrEmpty } from "../../../helpers/Function.helper";
+import HomeServer from "../HomeServer/HomeServer.component";
 
 const mapStateToProperties = (state: State) => ({
   expandState: state.expand,
@@ -60,11 +60,16 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const HomeComponent = (props: Props) => {
-  const { expandState, profileState, setInstance, setInstanceIsEnabled } = props;
-  
+  const {
+    expandState,
+    profileState,
+    setInstance,
+    setInstanceIsEnabled
+  } = props;
+
   const classes = useStyles();
 
-  const instanceKey = `HOME`;
+  const instanceKey = "HOME";
   const isEnabled = expandState.instance[instanceKey]?.isEnabled;
 
   useEffect(() => {
@@ -73,7 +78,7 @@ const HomeComponent = (props: Props) => {
         isEnabled: false
       });
     }
-  }, [expandState, instanceKey]);
+  }, [expandState, instanceKey, setInstance]);
 
   const handleDescriptionExpandClick = () => {
     setInstanceIsEnabled(instanceKey, !isEnabled);
@@ -81,50 +86,54 @@ const HomeComponent = (props: Props) => {
 
   return (
     <div>
-      <React.Fragment>
-        <AppBar color="default" position="fixed">
-          <Toolbar title={profileState.configuration.game?.name}>
-            <Avatar alt="game-image" src={profileState.configuration.game?.image}></Avatar>
-            <Grid direction="column" spacing={0}>
-              <Typography variant="h6" noWrap>{profileState.configuration.game?.name}</Typography>
-              <Typography variant="subtitle1" noWrap>v{profileState.configuration.game?.version}</Typography>
-            </Grid>
-            <Grid direction="row" spacing={0} style={{
+      <AppBar color="default" position="fixed">
+        <Toolbar>
+          <Avatar
+            src={profileState.configuration.game?.image}
+            style={{
+              marginRight: "16px"
+            }}
+          />
+          <Grid>
+            <Typography variant="subtitle1" noWrap>
+              {profileState.configuration.game?.name}
+            </Typography>
+            <Typography variant="subtitle2" noWrap>
+              {profileState.configuration.game?.version}
+            </Typography>
+          </Grid>
+          <Grid
+            style={{
               marginLeft: "auto"
-            }}>
-              <IconButton href={profileState.configuration.game?.url || "#"} target="_blank">
-                <Info />
-              </IconButton>
-              <IconButton
-                className={
-                  isEnabled
-                    ? classes.expand
-                    : classes.collapse
-                }
-                onClick={handleDescriptionExpandClick}>
-                <ExpandMore />
-              </IconButton>
-            </Grid>
-          </Toolbar>
-          <Collapse
-            in={isEnabled}
-            timeout="auto"
-            unmountOnExit
+            }}
           >
-            <Toolbar>
-              <Typography
-                component="p"
-                color="textSecondary"
-                paragraph
-                variant="body2"
-              >
-                {profileState.configuration.game?.description}
-              </Typography>
-            </Toolbar>
-          </Collapse>
-        </AppBar>
-        <Toolbar />
-      </React.Fragment>
+            <IconButton
+              href={profileState.configuration.game?.url || "#"}
+              target="_blank"
+            >
+              <Info />
+            </IconButton>
+            <IconButton
+              className={isEnabled ? classes.expand : classes.collapse}
+              onClick={handleDescriptionExpandClick}
+            >
+              <ExpandMore />
+            </IconButton>
+          </Grid>
+        </Toolbar>
+        <Collapse in={isEnabled} timeout="auto" unmountOnExit>
+          <Toolbar>
+            <Typography component="p" color="textSecondary" variant="body2">
+              {profileState.configuration.game?.description}
+            </Typography>
+          </Toolbar>
+        </Collapse>
+      </AppBar>
+      <Toolbar />
+      <Box mt={2}>
+        <Typography variant="h6">Packs</Typography>
+        <Divider />
+      </Box>
       <div>
         {profileState.configuration.packs?.map(
           (
@@ -136,6 +145,22 @@ const HomeComponent = (props: Props) => {
           }
         )}
       </div>
+      <Box mt={2}>
+        <Typography variant="h6">Servers</Typography>
+        <Divider />
+      </Box>
+      <div>
+        {profileState.configuration.servers?.map(
+          (
+            value: ConfigurationServer,
+            index: number,
+            array: ConfigurationServer[]
+          ) => {
+            return <HomeServer key={`${index}`} server={value} />;
+          }
+        )}
+      </div>
+      <Box mt={2}></Box>
     </div>
   );
 };

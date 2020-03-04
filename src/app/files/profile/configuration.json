@@ -7,9 +7,6 @@
         "url": "",
         "version": "12.0"
     },
-    "instructions": [
-        "test"
-    ],
     "packs": [
         {
             "addons": [
@@ -30,6 +27,9 @@
                     "version": "10.0"
                 }
             ],
+            "instructions": [
+                "test"
+            ],
             "description": "Lorem Ipsum",
             "image": "https://material-ui.com/static/images/grid-list/breakfast.jpg",
             "name": "forge",
@@ -40,10 +40,11 @@
     ],
     "servers": [
         {
-            "address": "",
-            "port": 1000,
-            "title": "Minecraft Server",
-            "subtitle": "A server for the game Minecraft"
+            "address": "192.160.12.12",
+            "description": "A server for the game Minecraft",
+            "image": "https://material-ui.com/static/images/grid-list/breakfast.jpg",
+            "name": "Minecraft Server",
+            "port": 1000
         }
     ]
 }

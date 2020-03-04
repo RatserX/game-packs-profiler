@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import {
   Grid,
   Card,
-  CardMedia,
   Typography,
   CardContent,
   CardHeader,
@@ -16,17 +15,17 @@ import {
 } from "@material-ui/core";
 import { GetApp, ExpandMore } from "@material-ui/icons";
 import { connect, ConnectedProps } from "react-redux";
+import "./HomePackAddon.style.scss";
 import {
   timestampValueToDate,
   isObjectNullOrEmpty
 } from "../../../helpers/Function.helper";
+import { ConfigurationPackAddon } from "../../../helpers/Interface.helper";
 import { State } from "../../../store/Store";
 import {
   setInstance,
   setInstanceIsEnabled
 } from "../../../store/expand/Expand.action";
-import "./HomePackAddon.style.scss";
-import { ConfigurationPackAddon } from "../../../helpers/Interface.helper";
 
 const mapStateToProperties = (state: State) => ({
   expandState: state.expand
@@ -64,8 +63,9 @@ const HomePackAddonComponent = (props: Props) => {
   const { expandState, setInstanceIsEnabled, addon, id } = props;
 
   const classes = useStyles();
-
-  const date = timestampValueToDate(addon.timestamp);
+  
+  timestampValueToDate(addon.timestamp);
+  
   const instanceKey = `HOMEPACKADDON${id}`;
   const isEnabled = expandState.instance[instanceKey]?.isEnabled;
 
@@ -83,16 +83,16 @@ const HomePackAddonComponent = (props: Props) => {
 
   return (
     <Grid item xs={12} sm={6} md={4} xl={3}>
-      <Card variant="outlined">
+      <Card variant="outlined" square>
         <CardHeader
           avatar={<Avatar src={addon.image} />}
-          subheader={date}
+          subheader={addon.version}
           subheaderTypographyProps={{
-            variant: "body2"
+            variant: "subtitle2"
           }}
           title={addon.name}
           titleTypographyProps={{
-            variant: "body2"
+            variant: "subtitle1"
           }}
         />
         <CardActions disableSpacing>
@@ -100,11 +100,7 @@ const HomePackAddonComponent = (props: Props) => {
             <GetApp />
           </IconButton>
           <IconButton
-            className={
-              isEnabled
-                ? classes.expand
-                : classes.collapse
-            }
+            className={isEnabled ? classes.expand : classes.collapse}
             onClick={handleDescriptionExpandClick}
             style={{
               marginLeft: "auto"
@@ -113,18 +109,9 @@ const HomePackAddonComponent = (props: Props) => {
             <ExpandMore />
           </IconButton>
         </CardActions>
-        <Collapse
-          in={isEnabled}
-          timeout="auto"
-          unmountOnExit
-        >
+        <Collapse in={isEnabled} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography
-              component="p"
-              color="textSecondary"
-              paragraph
-              variant="body2"
-            >
+            <Typography component="p" color="textSecondary" variant="body2">
               {addon.description}
             </Typography>
           </CardContent>
