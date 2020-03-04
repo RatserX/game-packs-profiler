@@ -3,7 +3,13 @@ const isObjectEmpty = (o: any): boolean =>
 
 const isObjectNull = (o: any): boolean => o == null;
 
-const isObjectNullOrEmpty = (o: any) => isObjectEmpty(o) || isObjectNull(o);
+const isObjectNullOrEmpty = (o: any) => isObjectNull(o) || isObjectEmpty(o);
+
+const isStringEmpty = (s: string): boolean => s.length === 0;
+
+const isStringNull = (s: string | undefined): boolean => s == null;
+
+const isStringNullOrEmpty = (s: string | undefined) => isStringNull(s) || isStringEmpty(s as string);
 
 const timestampDateToDate = (
   date: Date,
@@ -29,6 +35,9 @@ export {
   isObjectEmpty,
   isObjectNull,
   isObjectNullOrEmpty,
+  isStringEmpty,
+  isStringNull,
+  isStringNullOrEmpty,
   timestampDateToDate,
   timestampValueToDate
 };

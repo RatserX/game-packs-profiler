@@ -29,7 +29,7 @@ const HomeServer = (props: Props) => {
         <Grid item xs={12} sm={6}>
           <Card elevation={3} variant="elevation" square>
             <CardHeader
-              avatar={<Avatar src={server.image} />}
+              avatar={<Avatar src={server.image || "/images/ph-server.png"} variant="rounded" />}
               subheader={server.description}
               subheaderTypographyProps={{
                 variant: "subtitle2"
@@ -39,23 +39,39 @@ const HomeServer = (props: Props) => {
                 variant: "subtitle1"
               }}
             />
-            <List>
-              <ListItem dense={true}>
+            <List dense>
+              <ListItem>
                 <ListItemIcon>
                   <Dns />
                 </ListItemIcon>
                 <ListItemText>
-                  <Typography component="p" color="textPrimary" variant="body1">Address:</Typography>
-                  <Typography component="p" color="textSecondary" variant="body2">{server.address}</Typography>
+                  <Typography component="p" color="textPrimary" variant="body1">
+                    Address
+                  </Typography>
+                  <Typography
+                    component="p"
+                    color="textSecondary"
+                    variant="body2"
+                  >
+                    {server.address}
+                  </Typography>
                 </ListItemText>
               </ListItem>
-              <ListItem dense={true}>
+              <ListItem dense>
                 <ListItemIcon>
                   <SettingsEthernet />
                 </ListItemIcon>
                 <ListItemText>
-                  <Typography component="p" color="textPrimary" variant="body1">Port:</Typography>
-                  <Typography component="p" color="textSecondary" variant="body2">{server.port}</Typography>
+                  <Typography component="p" color="textPrimary" variant="body1">
+                    Port
+                  </Typography>
+                  <Typography
+                    component="p"
+                    color="textSecondary"
+                    variant="body2"
+                  >
+                    {server.port}
+                  </Typography>
                 </ListItemText>
               </ListItem>
             </List>

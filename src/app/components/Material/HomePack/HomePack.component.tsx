@@ -8,7 +8,8 @@ import {
   CardHeader,
   IconButton,
   Box,
-  Avatar
+  Avatar,
+  List
 } from "@material-ui/core";
 import { Info } from "@material-ui/icons";
 import "./HomePack.style.scss";
@@ -17,6 +18,8 @@ import {
   ConfigurationPackAddon
 } from "../../../helpers/Interface.helper";
 import HomePackAddon from "../HomePackAddon/HomePackAddon.component";
+import HomePackInstruction from "../HomePackInstruction/HomePackInstruction.component";
+import { isStringNullOrEmpty } from "../../../helpers/Function.helper";
 
 type Props = {
   key: string;
@@ -32,11 +35,11 @@ const HomePack = (props: Props) => {
         <Card elevation={3} variant="elevation" square>
           <CardHeader
             action={
-              <IconButton href={pack.url} target="_blank">
+              <IconButton hidden={isStringNullOrEmpty(pack.url)} href={pack.url} target="_blank">
                 <Info />
               </IconButton>
             }
-            avatar={<Avatar src={pack.image} />}
+            avatar={<Avatar src={pack.image || "/images/ph-pack.png"} variant="rounded" />}
             subheader={pack.version}
             subheaderTypographyProps={{
               variant: "subtitle2"
@@ -78,7 +81,23 @@ const HomePack = (props: Props) => {
               <Divider />
             </Box>
             <Box mt={2}>
-              test
+              <List dense>
+                {pack.instructions?.map(
+                  (
+                    value: string,
+                    index: number,
+                    array: string[]
+                  ) => {
+                    return (
+                      <HomePackInstruction
+                        instruction={value}
+                        key={index}
+                        id={`${index}`}
+                      />
+                    );
+                  }
+                )}
+              </List>
             </Box>
           </CardContent>
         </Card>

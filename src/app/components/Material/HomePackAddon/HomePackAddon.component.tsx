@@ -18,7 +18,8 @@ import { connect, ConnectedProps } from "react-redux";
 import "./HomePackAddon.style.scss";
 import {
   timestampValueToDate,
-  isObjectNullOrEmpty
+  isObjectNullOrEmpty,
+  isStringNullOrEmpty
 } from "../../../helpers/Function.helper";
 import { ConfigurationPackAddon } from "../../../helpers/Interface.helper";
 import { State } from "../../../store/Store";
@@ -63,9 +64,9 @@ const HomePackAddonComponent = (props: Props) => {
   const { expandState, setInstanceIsEnabled, addon, id } = props;
 
   const classes = useStyles();
-  
+
   timestampValueToDate(addon.timestamp);
-  
+
   const instanceKey = `HOMEPACKADDON${id}`;
   const isEnabled = expandState.instance[instanceKey]?.isEnabled;
 
@@ -85,7 +86,7 @@ const HomePackAddonComponent = (props: Props) => {
     <Grid item xs={12} sm={6} md={4} xl={3}>
       <Card variant="outlined" square>
         <CardHeader
-          avatar={<Avatar src={addon.image} />}
+          avatar={<Avatar src={addon.image || "/images/ph-addon.png"} variant="rounded" />}
           subheader={addon.version}
           subheaderTypographyProps={{
             variant: "subtitle2"
@@ -101,6 +102,7 @@ const HomePackAddonComponent = (props: Props) => {
           </IconButton>
           <IconButton
             className={isEnabled ? classes.expand : classes.collapse}
+            hidden={isStringNullOrEmpty(addon.description)}
             onClick={handleDescriptionExpandClick}
             style={{
               marginLeft: "auto"
