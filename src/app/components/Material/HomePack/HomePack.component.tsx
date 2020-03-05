@@ -49,11 +49,15 @@ const HomePack = (props: Props) => {
                 variant="rounded"
               />
             }
-            subheader={pack.version}
+            subheader={
+              <Typography>{pack.version}</Typography>
+            }
             subheaderTypographyProps={{
               variant: "subtitle2"
             }}
-            title={pack.name}
+            title={
+              <Typography>{pack.name}</Typography>
+            }
             titleTypographyProps={{
               variant: "subtitle1"
             }}

@@ -12,7 +12,7 @@ import {
   Theme,
   Divider
 } from "@material-ui/core";
-import { Info, ExpandMore } from "@material-ui/icons";
+import { Info, ExpandMore, GetApp } from "@material-ui/icons";
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import "./Home.style.scss";
@@ -100,17 +100,19 @@ const HomeComponent = (props: Props) => {
             }}
             variant="rounded"
           />
-          <Grid>
-            <Typography variant="subtitle1" noWrap>
+          <Grid zeroMinWidth>
+            <Typography noWrap variant="subtitle1">
               {profileState.configuration.game?.name}
             </Typography>
-            <Typography variant="subtitle2" noWrap>
+            <Typography noWrap variant="subtitle2">
               {profileState.configuration.game?.version}
             </Typography>
           </Grid>
           <Grid
             style={{
-              marginLeft: "auto"
+              marginLeft: "auto",
+              minWidth: "150px",
+              textAlign: "right",
             }}
           >
             <IconButton
@@ -119,6 +121,13 @@ const HomeComponent = (props: Props) => {
               target="_blank"
             >
               <Info />
+            </IconButton>
+            <IconButton
+              hidden={isStringNullOrEmpty(profileState.configuration.game?.download)}
+              href={profileState.configuration.game?.download || "#"}
+              target="_blank"
+            >
+              <GetApp />
             </IconButton>
             <IconButton
               hidden={isStringNullOrEmpty(

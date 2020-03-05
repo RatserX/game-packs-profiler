@@ -1,7 +1,8 @@
 {
     "game": {
         "description": "Minecraft is a sandbox video game created by Swedish developer Markus Persson, released by Mojang in 2011 and purchased by Microsoft in 2014.",
-        "image": "",
+        "download": "asdasd",
+        "image": "https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/menu/menu-buy.gif",
         "name": "Minecraft",
         "timestamp": 1581794539,
         "url": "https://tlauncher.org/en/",
@@ -9,17 +10,26 @@
     },
     "packs": [
         {
+            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
+            "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
+            "name": "Forge",
+            "timestamp": 1583113389,
+            "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html",
+            "version": "14.23.5.2847",
             "addons": [
                 {
                     "description": "This mod randomly imbues spawning Living Things in the World with Diablo-style random Enchantments, making them much harder and much more rewarding to kill.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/atomicstrykers-infernal-mobs/download/2771611",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/14/505/64/64/635597654123184518.png",
                     "name": "AtomicStryker's Infernal Mobs",
                     "timestamp": 1581794539,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/atomicstrykers-infernal-mobs/download/2771611",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/atomicstrykers-infernal-mobs/files/2771611",
                     "version": "1.12.2"
                 },
                 {
                     "description": "This mod adds a lunar event called \"Bloodmoon\", every night there is a chance of 5% (configurable) that a bloodmoon will rise. During the following night monsters will spawn faster and closer to the player. The spawn limit of monsters will also be higher. Notice that all of these things only apply to monsters spawned on the surface, you will not experience any of these effects if you are for example in a cave. You can also not sleep through a bloodmoon night (configurable). You can also turn on an option in the config file to make all monsters spawned by a bloodmoon vanish at dawn (Disabled by default).",
+                    "download": "",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/12/919/64/64/635546771248161920.png",
                     "name": "Bloodmoon",
                     "timestamp": 1581794539,
@@ -28,6 +38,7 @@
                 },
                 {
                     "description": "Chisel adds a huge variety of decorative blocks to the game. The mod is very useful for people who like the construction aspect of Minecraft.",
+                    "download": "",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/24/517/64/64/635758617021943603.png",
                     "name": "Chisel",
                     "timestamp": 1581794539,
@@ -36,6 +47,7 @@
                 },
                 {
                     "description": "\" Corail Tombstone keeps you from losing your belongings on death, with many features of survivability and dimensional teleportation, in a medieval fantasy atmosphere related to the grave's souls. \"",
+                    "download": "",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/130/354/64/64/636459742199274923.jpeg",
                     "name": "Corail Tombstone",
                     "timestamp": 1583113389,
@@ -44,6 +56,7 @@
                 },
                 {
                     "description": "Nothing else than a simple core mod required by most of my mods, containing useful features like a gui-api, packet system, dynamic rendering system, easy asm transformation name manager and other useful stuff.",
+                    "download": "",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/86/225/64/64/636207446427836220.png",
                     "name": "CreativeCore",
                     "timestamp": 1581794539,
@@ -199,13 +212,7 @@
                 "Lorem ipsum dolor sit amet, consectetur ",
                 "Lorem ipsum dolor sit amet, consectetur ",
                 "Lorem ipsum dolor sit amet, consectetur "
-            ],
-            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
-            "image": "",
-            "name": "Forge",
-            "timestamp": 1583113389,
-            "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html",
-            "version": "14.23.5.2847"
+            ]
         }
     ],
     "servers": [

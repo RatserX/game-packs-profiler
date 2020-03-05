@@ -14,6 +14,7 @@ export interface Configuration {
 
 export interface ConfigurationGame {
   description: string;
+  download: string;
   image: string;
   name: string;
   timestamp: number;
@@ -22,18 +23,20 @@ export interface ConfigurationGame {
 }
 
 export interface ConfigurationPack {
-  addons: ConfigurationPackAddon[];
-  instructions: string[];
   description: string;
+  download: string;
   image: string;
   name: string;
   timestamp: number;
   url: string;
   version: string;
+  addons: ConfigurationPackAddon[];
+  instructions: string[];
 }
 
 export interface ConfigurationPackAddon {
   description: string;
+  download: string;
   image: string;
   name: string;
   timestamp: number;
