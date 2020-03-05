@@ -16,7 +16,10 @@ import { Info, ExpandMore } from "@material-ui/icons";
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import "./Home.style.scss";
-import { isObjectNullOrEmpty, isStringNullOrEmpty } from "../../../helpers/Function.helper";
+import {
+  isObjectNullOrEmpty,
+  isStringNullOrEmpty
+} from "../../../helpers/Function.helper";
 import {
   ConfigurationPack,
   ConfigurationServer
@@ -89,7 +92,9 @@ const HomeComponent = (props: Props) => {
       <AppBar color="default" position="fixed">
         <Toolbar>
           <Avatar
-            src={profileState.configuration.game?.image || "/images/ph-game.png"}
+            src={
+              profileState.configuration.game?.image || "/images/ph-game.png"
+            }
             style={{
               marginRight: "16px"
             }}
@@ -116,7 +121,9 @@ const HomeComponent = (props: Props) => {
               <Info />
             </IconButton>
             <IconButton
-              hidden={isStringNullOrEmpty(profileState.configuration.game?.description)}
+              hidden={isStringNullOrEmpty(
+                profileState.configuration.game?.description
+              )}
               className={isEnabled ? classes.expand : classes.collapse}
               onClick={handleDescriptionExpandClick}
             >

@@ -86,7 +86,12 @@ const HomePackAddonComponent = (props: Props) => {
     <Grid item xs={12} sm={6} md={4} xl={3}>
       <Card variant="outlined" square>
         <CardHeader
-          avatar={<Avatar src={addon.image || "/images/ph-addon.png"} variant="rounded" />}
+          avatar={
+            <Avatar
+              src={addon.image || "/images/ph-addon.png"}
+              variant="rounded"
+            />
+          }
           subheader={addon.version}
           subheaderTypographyProps={{
             variant: "subtitle2"

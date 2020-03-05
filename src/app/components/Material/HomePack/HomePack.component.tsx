@@ -35,11 +35,20 @@ const HomePack = (props: Props) => {
         <Card elevation={3} variant="elevation" square>
           <CardHeader
             action={
-              <IconButton hidden={isStringNullOrEmpty(pack.url)} href={pack.url} target="_blank">
+              <IconButton
+                hidden={isStringNullOrEmpty(pack.url)}
+                href={pack.url}
+                target="_blank"
+              >
                 <Info />
               </IconButton>
             }
-            avatar={<Avatar src={pack.image || "/images/ph-pack.png"} variant="rounded" />}
+            avatar={
+              <Avatar
+                src={pack.image || "/images/ph-pack.png"}
+                variant="rounded"
+              />
+            }
             subheader={pack.version}
             subheaderTypographyProps={{
               variant: "subtitle2"
@@ -83,11 +92,7 @@ const HomePack = (props: Props) => {
             <Box mt={2}>
               <List dense>
                 {pack.instructions?.map(
-                  (
-                    value: string,
-                    index: number,
-                    array: string[]
-                  ) => {
+                  (value: string, index: number, array: string[]) => {
                     return (
                       <HomePackInstruction
                         instruction={value}

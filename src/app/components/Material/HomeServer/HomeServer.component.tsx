@@ -11,7 +11,7 @@ import {
   ListItemIcon,
   ListItemText
 } from "@material-ui/core";
-import { Dns, SettingsEthernet } from "@material-ui/icons";
+import { SettingsEthernet, SettingsInputAntenna } from "@material-ui/icons";
 import "./HomeServer.style.scss";
 import { ConfigurationServer } from "../../../helpers/Interface.helper";
 
@@ -29,7 +29,12 @@ const HomeServer = (props: Props) => {
         <Grid item xs={12} sm={6}>
           <Card elevation={3} variant="elevation" square>
             <CardHeader
-              avatar={<Avatar src={server.image || "/images/ph-server.png"} variant="rounded" />}
+              avatar={
+                <Avatar
+                  src={server.image || "/images/ph-server.png"}
+                  variant="rounded"
+                />
+              }
               subheader={server.description}
               subheaderTypographyProps={{
                 variant: "subtitle2"
@@ -42,7 +47,7 @@ const HomeServer = (props: Props) => {
             <List dense>
               <ListItem>
                 <ListItemIcon>
-                  <Dns />
+                  <SettingsInputAntenna />
                 </ListItemIcon>
                 <ListItemText>
                   <Typography component="p" color="textPrimary" variant="body1">

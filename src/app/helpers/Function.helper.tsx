@@ -9,7 +9,8 @@ const isStringEmpty = (s: string): boolean => s.length === 0;
 
 const isStringNull = (s: string | undefined): boolean => s == null;
 
-const isStringNullOrEmpty = (s: string | undefined) => isStringNull(s) || isStringEmpty(s as string);
+const isStringNullOrEmpty = (s: string | undefined) =>
+  isStringNull(s) || isStringEmpty(s as string);
 
 const timestampDateToDate = (
   date: Date,

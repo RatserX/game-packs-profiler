@@ -11,20 +11,188 @@
         {
             "addons": [
                 {
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nibh nibh, dictum non nunc vel, lacinia sodales orci. Vestibulum vel dolor lacus. Quisque sit amet sem eu nulla convallis pretium. Quisque porttitor leo enim, bibendum egestas metus consectetur ut. Aliquam libero massa, dignissim non pretium ac, ultricies quis lacus.",
-                    "image": "",
-                    "name": "tinkers",
-                    "timestamp": 1583113389,
-                    "url": "",
-                    "version": "10.0"
+                    "description": "This mod randomly imbues spawning Living Things in the World with Diablo-style random Enchantments, making them much harder and much more rewarding to kill.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/14/505/64/64/635597654123184518.png",
+                    "name": "AtomicStryker's Infernal Mobs",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/atomicstrykers-infernal-mobs/download/2771611",
+                    "version": "1.12.2"
                 },
                 {
-                    "description": "",
-                    "image": "https://material-ui.com/static/images/grid-list/breakfast.jpg",
-                    "name": "tinkers",
+                    "description": "This mod adds a lunar event called \"Bloodmoon\", every night there is a chance of 5% (configurable) that a bloodmoon will rise. During the following night monsters will spawn faster and closer to the player. The spawn limit of monsters will also be higher. Notice that all of these things only apply to monsters spawned on the surface, you will not experience any of these effects if you are for example in a cave. You can also not sleep through a bloodmoon night (configurable). You can also turn on an option in the config file to make all monsters spawned by a bloodmoon vanish at dawn (Disabled by default).",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/12/919/64/64/635546771248161920.png",
+                    "name": "Bloodmoon",
                     "timestamp": 1581794539,
-                    "url": "",
-                    "version": "10.0"
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/bloodmoon/download/2537917",
+                    "version": "1.5.3"
+                },
+                {
+                    "description": "Chisel adds a huge variety of decorative blocks to the game. The mod is very useful for people who like the construction aspect of Minecraft.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/24/517/64/64/635758617021943603.png",
+                    "name": "Chisel",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/chisel/download/2813538",
+                    "version": "1.0.1.44"
+                },
+                {
+                    "description": "\" Corail Tombstone keeps you from losing your belongings on death, with many features of survivability and dimensional teleportation, in a medieval fantasy atmosphere related to the grave's souls. \"",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/130/354/64/64/636459742199274923.jpeg",
+                    "name": "Corail Tombstone",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/2885466",
+                    "version": "3.6.8"
+                },
+                {
+                    "description": "Nothing else than a simple core mod required by most of my mods, containing useful features like a gui-api, packet system, dynamic rendering system, easy asm transformation name manager and other useful stuff.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/86/225/64/64/636207446427836220.png",
+                    "name": "CreativeCore",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2860437",
+                    "version": "1.9.90"
+                },
+                {
+                    "description": "Decocraft adds in over 3000 decorations for your Minecraft World. This mod will definitely give you a lot more variety when decorating your builds. Many of the items are actually functional as well!",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/236/278/64/64/637091103057898308.png",
+                    "name": "Decocraft",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/decocraft/download/2777813",
+                    "version": "2.6.3"
+                },
+                {
+                    "description": "To create more dynamic, aesthetic, fun and natural looking trees while respecting the Minecraft graphic stylization and enforcing a narrow project scope that keeps things simple.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/111/638/64/64/636389419656399314.png",
+                    "name": "Dynamic Trees",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/dynamictrees/download/2870267",
+                    "version": "0.9.7"
+                },
+                {
+                    "description": "This is a new base library (API) that is used in all of my other mods. This is a replacement of ModUtilsAPI.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/106/541/64/64/636360116503014498.png",
+                    "name": "GottschCore",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/gottschcore/download/2893577",
+                    "version": "1.12.1"
+                },
+                {
+                    "description": "HWYLA (Pronounced \"Hwhy-la\", similar to \"Coo-Hwhip\")",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/63/499/64/64/636143286314870563_animated.gif",
+                    "name": "Hwyla",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/hwyla/download/2568751",
+                    "version": "1.8.26-B41"
+                },
+                {
+                    "description": "Ice and Fire is a mod created by both Raptorfarian and Alexthe666, which hopes to add dragons in a proper way. Currently, Dragons have two types: Ice and Fire. Fire Dragons breathe fire and roam most of the habitable world, whilst Ice Dragons inhabit the coldest places known to man and freeze their prey to death. Both kinds of dragons spawn naturally as adults.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/190/975/64/64/636857615673605328.png",
+                    "name": "Ice and Fire: Dragons in a whole new light!",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons/download/2874453",
+                    "version": "1.8.4"
+                },
+                {
+                    "description": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/29/69/64/64/635838945588716414.jpeg",
+                    "name": "Just Enough Items (JEI)",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/jei/download/2847112",
+                    "version": "4.15.0.293"
+                },
+                {
+                    "description": "JourneyMap is a client+server mod for Forge which maps your Minecraft world in real-time as you explore. You can view the map in a web browser or in-game as a Minimap or full-screen.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/9/144/64/64/635421614078544069.png",
+                    "name": "JourneyMap",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap/download/2888880",
+                    "version": "5.7.0"
+                },
+                {
+                    "description": "LLibrary is a small mod that contains shared code for other mods.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/36/938/64/64/635945231023485157.png",
+                    "name": "LLibrary",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/llibrary/download/2704186",
+                    "version": "1.7.19"
+                },
+                {
+                    "description": "Millénaire is a Minecraft mod that aims to fill the \"emptiness\" left by the default Minecraft Villages by adding new NPC villages loosely based on 11th-century cultures. A village is populated by men, women, and children that each lives their own life and have their own story to tell.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/103/963/64/64/636341933636382104.png",
+                    "name": "Millénaire",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/millenaire/download/2855166",
+                    "version": "8.0.1"
+                },
+                {
+                    "description": "This mod adds Multiple types of storage;",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/250/400/64/64/637178603152530025.png",
+                    "name": "MultiStorage",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/multistorage/download/2710024",
+                    "version": "1.4.14"
+                },
+                {
+                    "description": "Neat is a mod that adds Unit Frames to the top of every entity. That image is a good example of it.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/29/326/64/64/635843253254829591.png",
+                    "name": "Neat",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/neat/download/2595310",
+                    "version": "1.4-17"
+                },
+                {
+                    "description": "OptiFine is a Minecraft optimization mod.",
+                    "image": "",
+                    "name": "OptiFine 1.12.2 HD U F5",
+                    "timestamp": 1581794539,
+                    "url": "https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_F5.jar&x=a3df",
+                    "version": "1.12.2 HD U F5"
+                },
+                {
+                    "description": "RandomPatches is a mod that contains a bunch of miscellaneous patches for Minecraft. RandomPatches only contains features that require ASM transformers. Tweaks that don't require ASM transformers go in RandomTweaks, which I recommend as a companion mod.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/137/948/64/64/636518346385385655.png",
+                    "name": "RandomPatches",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/randompatches/download/2863699",
+                    "version": "1.21.0.0"
+                },
+                {
+                    "description": "Craft a chicken catcher with an egg, a stick, and a feather. Use the catcher on a chicken to capture it and add it to your inventory.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/120/213/64/64/636406500473842128.jpeg",
+                    "name": "Roost",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/roost/download/2702080",
+                    "version": "2.0.10"
+                },
+                {
+                    "description": "SecurityCraft adds exactly what the name suggests! Lasers, retinal scanners, keypads, unbreakable doors and more. Pairs well with mods such as Smart Moving, Secret Rooms, and the Wall Jump mod. Feel free to download it, and be protected from anyone breaking into your house, even those pesky creepers! For more information, pictures, recipes, and other stuff, refer to the ingame documentation via /sc help.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/107/287/64/64/636364946300155797.png",
+                    "name": "Security Craft",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/security-craft/download/2891856",
+                    "version": "1.8.17"
+                },
+                {
+                    "description": "This is the core classes all my mods use. It must be installed or my mods will crash.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/250/398/64/64/637178601754369590.png",
+                    "name": "ShetiPhianCore",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/shetiphiancore/download/2661618",
+                    "version": "3.5.9"
+                },
+                {
+                    "description": "...is a Minecraft mod, which adds backpacks. All the backpacks come from JavierDarkona's Mod Adventure Backpack. Traveller's Backpack is the unofficial port to 1.12.2",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/206/399/64/64/636957122858610796.png",
+                    "name": "Traveller's Backpack",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/travellers-backpack/download/2870219",
+                    "version": "1.0.22.22"
+                },
+                {
+                    "description": "Treasure2! adds to the thrill of discovery in Minecraft. This mod adds various new and rare chests of treasure to be discovered. The chests are secured by an assortment of locks and can only be unlocked by finding the corresponding keys.",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/145/260/64/64/636561476967448455.png",
+                    "name": "Treasure2!",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/treasure2/download/2894117",
+                    "version": "1.10.0"
                 }
             ],
             "instructions": [
@@ -32,7 +200,7 @@
                 "Lorem ipsum dolor sit amet, consectetur ",
                 "Lorem ipsum dolor sit amet, consectetur "
             ],
-            "description": "Minecraft Forge 1.15.2/1.14.4 is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "image": "",
             "name": "Forge",
             "timestamp": 1583113389,
