@@ -11,7 +11,7 @@ import {
   Avatar,
   List
 } from "@material-ui/core";
-import { Info } from "@material-ui/icons";
+import { Info, GetApp } from "@material-ui/icons";
 import "./HomePack.style.scss";
 import {
   ConfigurationPack,
@@ -30,18 +30,27 @@ const HomePack = (props: Props) => {
   const { pack } = props;
 
   return (
-    <Box mt={2}>
-      <Grid>
+    <Grid className="home-pack" item zeroMinWidth>
+      <Box mt={2}>
         <Card elevation={3} variant="elevation" square>
           <CardHeader
             action={
-              <IconButton
-                hidden={isStringNullOrEmpty(pack.url)}
-                href={pack.url}
-                target="_blank"
-              >
-                <Info />
-              </IconButton>
+              <div>
+                <IconButton
+                  hidden={isStringNullOrEmpty(pack.url)}
+                  href={pack.url || "#"}
+                  target="_blank"
+                >
+                  <Info />
+                </IconButton>
+                <IconButton
+                  hidden={isStringNullOrEmpty(pack.download)}
+                  href={pack.download || "#"}
+                  target="_blank"
+                >
+                  <GetApp />
+                </IconButton>
+              </div>
             }
             avatar={
               <Avatar
@@ -49,15 +58,11 @@ const HomePack = (props: Props) => {
                 variant="rounded"
               />
             }
-            subheader={
-              <Typography>{pack.version}</Typography>
-            }
+            subheader={<Typography noWrap>{pack.version}</Typography>}
             subheaderTypographyProps={{
               variant: "subtitle2"
             }}
-            title={
-              <Typography>{pack.name}</Typography>
-            }
+            title={<Typography noWrap>{pack.name}</Typography>}
             titleTypographyProps={{
               variant: "subtitle1"
             }}
@@ -94,7 +99,7 @@ const HomePack = (props: Props) => {
               <Divider />
             </Box>
             <Box mt={2}>
-              <List dense>
+              <Grid container spacing={2}>
                 {pack.instructions?.map(
                   (value: string, index: number, array: string[]) => {
                     return (
@@ -106,12 +111,12 @@ const HomePack = (props: Props) => {
                     );
                   }
                 )}
-              </List>
+              </Grid>
             </Box>
           </CardContent>
         </Card>
-      </Grid>
-    </Box>
+      </Box>
+    </Grid>
   );
 };
 

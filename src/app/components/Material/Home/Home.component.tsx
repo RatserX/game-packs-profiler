@@ -88,7 +88,7 @@ const HomeComponent = (props: Props) => {
   };
 
   return (
-    <div>
+    <Box className="home">
       <AppBar color="default" position="fixed">
         <Toolbar>
           <Avatar
@@ -100,7 +100,7 @@ const HomeComponent = (props: Props) => {
             }}
             variant="rounded"
           />
-          <Grid zeroMinWidth>
+          <Grid item zeroMinWidth>
             <Typography noWrap variant="subtitle1">
               {profileState.configuration.game?.name}
             </Typography>
@@ -109,10 +109,11 @@ const HomeComponent = (props: Props) => {
             </Typography>
           </Grid>
           <Grid
+            item
             style={{
               marginLeft: "auto",
               minWidth: "150px",
-              textAlign: "right",
+              textAlign: "right"
             }}
           >
             <IconButton
@@ -123,7 +124,9 @@ const HomeComponent = (props: Props) => {
               <Info />
             </IconButton>
             <IconButton
-              hidden={isStringNullOrEmpty(profileState.configuration.game?.download)}
+              hidden={isStringNullOrEmpty(
+                profileState.configuration.game?.download
+              )}
               href={profileState.configuration.game?.download || "#"}
               target="_blank"
             >
@@ -153,7 +156,7 @@ const HomeComponent = (props: Props) => {
         <Typography variant="h6">Packs</Typography>
         <Divider />
       </Box>
-      <div>
+      <Grid container>
         {profileState.configuration.packs?.map(
           (
             value: ConfigurationPack,
@@ -163,12 +166,12 @@ const HomeComponent = (props: Props) => {
             return <HomePack key={`${index}`} pack={value} />;
           }
         )}
-      </div>
+      </Grid>
       <Box mt={2}>
         <Typography variant="h6">Servers</Typography>
         <Divider />
       </Box>
-      <div>
+      <Grid container spacing={2}>
         {profileState.configuration.servers?.map(
           (
             value: ConfigurationServer,
@@ -178,9 +181,9 @@ const HomeComponent = (props: Props) => {
             return <HomeServer key={`${index}`} server={value} />;
           }
         )}
-      </div>
+      </Grid>
       <Box mt={2} />
-    </div>
+    </Box>
   );
 };
 

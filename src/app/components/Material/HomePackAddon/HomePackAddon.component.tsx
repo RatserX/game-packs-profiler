@@ -11,9 +11,10 @@ import {
   Avatar,
   makeStyles,
   Theme,
-  createStyles
+  createStyles,
+  Box
 } from "@material-ui/core";
-import { GetApp, ExpandMore } from "@material-ui/icons";
+import { GetApp, ExpandMore, Info } from "@material-ui/icons";
 import { connect, ConnectedProps } from "react-redux";
 import "./HomePackAddon.style.scss";
 import {
@@ -83,47 +84,76 @@ const HomePackAddonComponent = (props: Props) => {
   };
 
   return (
-    <Grid item xs={12} sm={6} md={4} xl={3}>
-      <Card variant="outlined" square>
-        <CardHeader
-          avatar={
-            <Avatar
-              src={addon.image || "/images/ph-addon.png"}
-              variant="rounded"
-            />
-          }
-          subheader={addon.version}
-          subheaderTypographyProps={{
-            variant: "subtitle2"
-          }}
-          title={addon.name}
-          titleTypographyProps={{
-            variant: "subtitle1"
-          }}
-        />
-        <CardActions disableSpacing>
-          <IconButton href={addon.url || "#"} target="_blank">
-            <GetApp />
-          </IconButton>
-          <IconButton
-            className={isEnabled ? classes.expand : classes.collapse}
-            hidden={isStringNullOrEmpty(addon.description)}
-            onClick={handleDescriptionExpandClick}
-            style={{
-              marginLeft: "auto"
+    <Grid
+      className="home-pack-addon"
+      item
+      xs={12}
+      sm={6}
+      md={4}
+      xl={3}
+      zeroMinWidth
+    >
+      <Box>
+        <Card variant="outlined" square>
+          <CardHeader
+            avatar={
+              <Avatar
+                src={addon.image || "/images/ph-addon.png"}
+                variant="rounded"
+              />
+            }
+            subheader={
+              <Typography noWrap variant="subtitle2">
+                {addon.version}
+              </Typography>
+            }
+            subheaderTypographyProps={{
+              variant: "subtitle2"
             }}
-          >
-            <ExpandMore />
-          </IconButton>
-        </CardActions>
-        <Collapse in={isEnabled} timeout="auto" unmountOnExit>
-          <CardContent>
-            <Typography component="p" color="textSecondary" variant="body2">
-              {addon.description}
-            </Typography>
-          </CardContent>
-        </Collapse>
-      </Card>
+            title={
+              <Typography noWrap variant="subtitle1">
+                {addon.name}
+              </Typography>
+            }
+            titleTypographyProps={{
+              variant: "subtitle1"
+            }}
+          />
+          <CardActions disableSpacing>
+            <IconButton
+              hidden={isStringNullOrEmpty(addon.url)}
+              href={addon.url || "#"}
+              target="_blank"
+            >
+              <Info />
+            </IconButton>
+            <IconButton
+              hidden={isStringNullOrEmpty(addon.download)}
+              href={addon.download || "#"}
+              target="_blank"
+            >
+              <GetApp />
+            </IconButton>
+            <IconButton
+              className={isEnabled ? classes.expand : classes.collapse}
+              hidden={isStringNullOrEmpty(addon.description)}
+              onClick={handleDescriptionExpandClick}
+              style={{
+                marginLeft: "auto"
+              }}
+            >
+              <ExpandMore />
+            </IconButton>
+          </CardActions>
+          <Collapse in={isEnabled} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography component="p" color="textSecondary" variant="body2">
+                {addon.description}
+              </Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+      </Box>
     </Grid>
   );
 };

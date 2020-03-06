@@ -9,7 +9,8 @@ import {
   List,
   ListItem,
   ListItemIcon,
-  ListItemText
+  ListItemText,
+  CardContent
 } from "@material-ui/core";
 import { SettingsEthernet, SettingsInputAntenna } from "@material-ui/icons";
 import "./HomeServer.style.scss";
@@ -24,28 +25,28 @@ const HomeServer = (props: Props) => {
   const { server } = props;
 
   return (
-    <div>
+    <Grid className="home-server" item xs={12} sm={6}>
       <Box mt={2}>
-        <Grid item xs={12} sm={6}>
-          <Card elevation={3} variant="elevation" square>
-            <CardHeader
-              avatar={
-                <Avatar
-                  src={server.image || "/images/ph-server.png"}
-                  variant="rounded"
-                />
-              }
-              subheader={server.description}
-              subheaderTypographyProps={{
-                variant: "subtitle2"
-              }}
-              title={server.name}
-              titleTypographyProps={{
-                variant: "subtitle1"
-              }}
-            />
-            <List dense>
-              <ListItem>
+        <Card elevation={3} variant="elevation" square>
+          <CardHeader
+            avatar={
+              <Avatar
+                src={server.image || "/images/ph-server.png"}
+                variant="rounded"
+              />
+            }
+            subheader={server.description}
+            subheaderTypographyProps={{
+              variant: "subtitle2"
+            }}
+            title={server.name}
+            titleTypographyProps={{
+              variant: "subtitle1"
+            }}
+          />
+          <CardContent>
+            <List dense disablePadding>
+              <ListItem disableGutters>
                 <ListItemIcon>
                   <SettingsInputAntenna />
                 </ListItemIcon>
@@ -62,7 +63,7 @@ const HomeServer = (props: Props) => {
                   </Typography>
                 </ListItemText>
               </ListItem>
-              <ListItem dense>
+              <ListItem disableGutters>
                 <ListItemIcon>
                   <SettingsEthernet />
                 </ListItemIcon>
@@ -80,10 +81,10 @@ const HomeServer = (props: Props) => {
                 </ListItemText>
               </ListItem>
             </List>
-          </Card>
-        </Grid>
+          </CardContent>
+        </Card>
       </Box>
-    </div>
+    </Grid>
   );
 };
 
