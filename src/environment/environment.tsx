@@ -1,7 +1,7 @@
 import { ThemeType } from "../app/layout/Layout";
 
 const environment = {
-  production: false,
+  production: true,
   profile: "profile.json",
   theme: ThemeType.MaterialDark
 };

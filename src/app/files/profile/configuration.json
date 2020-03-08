@@ -13,7 +13,7 @@
             "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
-            "name": "Forge",
+            "name": "Forge - Manual Installation",
             "timestamp": 1583113389,
             "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html",
             "version": "14.23.5.2847",
@@ -44,6 +44,15 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/chisel",
                     "version": "1.0.1.44"
+                },
+                {
+                    "description": "Allows resource packs to add connected textures, emissive rendering, and much more. A resource pack which adds these effects to vanilla, and some select mods, can be found here.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/ctm/download/2832564",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/102/452/64/64/636330854499701192.png",
+                    "name": "ConnectedTexturesMod",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/ctm",
+                    "version": "1.0.1.30"
                 },
                 {
                     "description": "\" Corail Tombstone keeps you from losing your belongings on death, with many features of survivability and dimensional teleportation, in a medieval fantasy atmosphere related to the grave's souls. \"",
@@ -94,7 +103,7 @@
                     "description": "HWYLA (Pronounced \"Hwhy-la\", similar to \"Coo-Hwhip\")",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/hwyla/download/2568751",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/63/499/64/64/636143286314870563_animated.gif",
-                    "name": "Hwyla",
+                    "name": "(Optional) Hwyla",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/hwyla",
                     "version": "1.8.26-B41"
@@ -112,7 +121,7 @@
                     "description": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/jei/download/2847112",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/29/69/64/64/635838945588716414.jpeg",
-                    "name": "Just Enough Items (JEI)",
+                    "name": "(Optional) Just Enough Items (JEI)",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
                     "version": "4.15.0.293"
@@ -121,7 +130,7 @@
                     "description": "JourneyMap is a client+server mod for Forge which maps your Minecraft world in real-time as you explore. You can view the map in a web browser or in-game as a Minimap or full-screen.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/journeymap/download/2888880",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/9/144/64/64/635421614078544069.png",
-                    "name": "JourneyMap",
+                    "name": "(Optional) JourneyMap",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap",
                     "version": "5.7.0"
@@ -157,7 +166,7 @@
                     "description": "Neat is a mod that adds Unit Frames to the top of every entity. That image is a good example of it.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/neat/download/2595310",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/29/326/64/64/635843253254829591.png",
-                    "name": "Neat",
+                    "name": "(Optional) Neat",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/neat",
                     "version": "1.4-17"
@@ -166,16 +175,25 @@
                     "description": "OptiFine is a Minecraft optimization mod.",
                     "download": "https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_F5.jar&x=a3df",
                     "image": "",
-                    "name": "OptiFine 1.12.2 HD U F5",
+                    "name": "(Optional) OptiFine 1.12.2 HD U F5",
                     "timestamp": 1581794539,
                     "url": "https://optifine.net/home",
                     "version": "1.12.2 HD U F5"
                 },
                 {
+                    "description": "A craftstudio importer and rendering library. ",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/ptrlib/download/2685154",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/148/601/64/64/636583739130384691.png",
+                    "name": "PTRLib",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/ptrlib",
+                    "version": "1.0.4"
+                },
+                {
                     "description": "RandomPatches is a mod that contains a bunch of miscellaneous patches for Minecraft. RandomPatches only contains features that require ASM transformers. Tweaks that don't require ASM transformers go in RandomTweaks, which I recommend as a companion mod.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/randompatches/download/2863699",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/137/948/64/64/636518346385385655.png",
-                    "name": "RandomPatches",
+                    "name": "(Optional) RandomPatches",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/randompatches",
                     "version": "1.21.0.0"
@@ -193,7 +211,7 @@
                     "description": "SecurityCraft adds exactly what the name suggests! Lasers, retinal scanners, keypads, unbreakable doors and more. Pairs well with mods such as Smart Moving, Secret Rooms, and the Wall Jump mod. Feel free to download it, and be protected from anyone breaking into your house, even those pesky creepers! For more information, pictures, recipes, and other stuff, refer to the ingame documentation via /sc help.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/security-craft/download/2891856",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/107/287/64/64/636364946300155797.png",
-                    "name": "Security Craft",
+                    "name": "(Optional) Security Craft",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/security-craft",
                     "version": "1.8.17"
@@ -206,6 +224,15 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/shetiphiancore",
                     "version": "3.5.9"
+                },
+                {
+                    "description": "Spartan Shields is a mod for Minecraft that adds a variety of new shields to the game.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/spartan-shields/files/2712229",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/199/901/64/64/636909850537954133.png",
+                    "name": "Spartan Shields",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-shields",
+                    "version": "1.5.4"
                 },
                 {
                     "description": "...is a Minecraft mod, which adds backpacks. All the backpacks come from JavierDarkona's Mod Adventure Backpack. Traveller's Backpack is the unofficial port to 1.12.2",
@@ -227,9 +254,43 @@
                 }
             ],
             "instructions": [
-                "Lorem ipsum dolor sit amet, consectetur ",
-                "Lorem ipsum dolor sit amet, consectetur ",
-                "Lorem ipsum dolor sit amet, consectetur "
+                "Install on the respective mods folder"
+            ]
+        },
+        {
+            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
+            "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
+            "name": "Forge - Twitch Installation",
+            "timestamp": 1583113389,
+            "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html",
+            "version": "14.23.5.2847",
+            "addons": [
+                {
+                    "description": "Minecraft Custom Profile with all the addons used in the server",
+                    "download": "https://drive.google.com/open?id=172wdLH_svTVFKG1yCHphtVsB9ezYIQ2u",
+                    "image": "",
+                    "name": "Custom Profile",
+                    "timestamp": 1581794539,
+                    "url": "",
+                    "version": "All"
+                },
+                {
+                    "description": "Minecraft Custom Profile with all the required addons needed to get in the server",
+                    "download": "https://drive.google.com/open?id=1es_2k8GopB_QUYLHb-eY2QtEfOXSLZU_",
+                    "image": "",
+                    "name": "Custom Profile",
+                    "timestamp": 1581794539,
+                    "url": "",
+                    "version": "Required"
+                }
+            ],
+            "instructions": [
+                "Open Twitch",
+                "Go to the Mods section",
+                "Go to Create Custom Profile",
+                "Import the downloaded profile",
+                "Play"
             ]
         }
     ],
@@ -239,7 +300,7 @@
             "description": "A server for the game Minecraft",
             "image": "",
             "name": "Minecraft Server",
-            "port": 1000
+            "port": 25565
         }
     ]
 }

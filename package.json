@@ -37,7 +37,9 @@
     "lint-build": "npm run lint && npm run build",
     "lint-start": "npm run lint && npm run start",
     "lint-watch": "npm run lint && npm run watch",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -68,9 +70,11 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-unicorn": "^16.0.0",
+    "gh-pages": "^2.2.0",
     "prettier": "1.19.1"
   },
   "watch": {
     "build": "src/"
-  }
+  },
+  "homepage": "http://ratserx.github.io/game-packs-profiler"
 }
