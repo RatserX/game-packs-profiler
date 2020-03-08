@@ -76,5 +76,5 @@
   "watch": {
     "build": "src/"
   },
-  "homepage": "http://ratserx.github.io/game-packs-profiler"
+  "homepage": "https://ratserx.github.io/game-packs-profiler"
 }
