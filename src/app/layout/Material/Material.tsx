@@ -34,7 +34,7 @@ const Element = ({ children }: ElementProps) => {
 const Router = ({ children }: RouterProps) => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/">
             <Home />
