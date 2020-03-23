@@ -98,7 +98,7 @@ const HomePackAddonComponent = (props: Props) => {
           <CardHeader
             avatar={
               <Avatar
-                src={addon.image || "/images/ph-addon.png"}
+                src={addon.image || "images/ph-addon.png"}
                 variant="rounded"
               />
             }

@@ -31,7 +31,7 @@ const HomeServer = (props: Props) => {
           <CardHeader
             avatar={
               <Avatar
-                src={server.image || "/images/ph-server.png"}
+                src={server.image || "images/ph-server.png"}
                 variant="rounded"
               />
             }

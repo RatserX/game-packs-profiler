@@ -37,6 +37,15 @@
                     "version": "1.5.3"
                 },
                 {
+                    "description": "Brandon's Core is a library mod used by most of my mods. It is no longer a core mod as the name would suggest but it does still contain a lot of the core code used by my mods including but not limited to base classes for various tiles, blocks and items, A powerful modular gui system and a lot of other miscellaneous utilities.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/brandons-core/download/2867147",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/19/329/64/64/635693356033460215.png",
+                    "name": "Brandon's Core",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/brandons-core",
+                    "version": "2.4.18.210"
+                },
+                {
                     "description": "Chisel adds a huge variety of decorative blocks to the game. The mod is very useful for people who like the construction aspect of Minecraft.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/chisel/download/2813538",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/24/517/64/64/635758617021943603.png",
@@ -44,6 +53,15 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/chisel",
                     "version": "1.0.1.44"
+                },
+                {
+                    "description": "Contains libraries for 3D math and transformations, model rendering, packets, config, colours, asm and a few other things.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8/download/2779848",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/36/121/64/64/635934545550873146.jpeg",
+                    "name": "CodeChicken Lib 1.8.+",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8",
+                    "version": "3.2.3.358"
                 },
                 {
                     "description": "Allows resource packs to add connected textures, emissive rendering, and much more. A resource pack which adds these effects to vanilla, and some select mods, can be found here.",
@@ -56,21 +74,21 @@
                 },
                 {
                     "description": "\" Corail Tombstone keeps you from losing your belongings on death, with many features of survivability and dimensional teleportation, in a medieval fantasy atmosphere related to the grave's souls. \"",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/2885466",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/2904987",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/130/354/64/64/636459742199274923.jpeg",
                     "name": "Corail Tombstone",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone",
-                    "version": "3.6.8"
+                    "version": "3.7.0"
                 },
                 {
                     "description": "Nothing else than a simple core mod required by most of my mods, containing useful features like a gui-api, packet system, dynamic rendering system, easy asm transformation name manager and other useful stuff.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2860437",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2908776",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/86/225/64/64/636207446427836220.png",
                     "name": "CreativeCore",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/creativecore",
-                    "version": "1.9.90"
+                    "version": "1.10.8"
                 },
                 {
                     "description": "Decocraft adds in over 3000 decorations for your Minecraft World. This mod will definitely give you a lot more variety when decorating your builds. Many of the items are actually functional as well!",
@@ -82,6 +100,15 @@
                     "version": "2.6.3"
                 },
                 {
+                    "description": "This is a mod that adds a lot of high tier items such as tools and armor as well as some high tier energy storage and a lot of other random features such as: //TODO Update this darn desription... //TODO fix typos in this desription.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/draconic-evolution/download/2867186",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/9/890/64/64/635440874545018659.png",
+                    "name": "Draconic Evolution",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/draconic-evolution",
+                    "version": "2.3.25.351"
+                },
+                {
                     "description": "To create more dynamic, aesthetic, fun and natural looking trees while respecting the Minecraft graphic stylization and enforcing a narrow project scope that keeps things simple.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/dynamictrees/download/2870267",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/111/638/64/64/636389419656399314.png",
@@ -89,15 +116,6 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/dynamictrees",
                     "version": "0.9.7"
-                },
-                {
-                    "description": "This is a new base library (API) that is used in all of my other mods. This is a replacement of ModUtilsAPI.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/gottschcore/download/2893577",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/106/541/64/64/636360116503014498.png",
-                    "name": "GottschCore",
-                    "timestamp": 1581794539,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/gottschcore",
-                    "version": "1.12.1"
                 },
                 {
                     "description": "HWYLA (Pronounced \"Hwhy-la\", similar to \"Coo-Hwhip\")",
@@ -116,6 +134,15 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons",
                     "version": "1.8.4"
+                },
+                {
+                    "description": "Now, Minecraft has three Elements.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/industrial-craft/download/2746892",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/35/839/64/64/635930304832975926.png",
+                    "name": "Industrial Craft",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/industrial-craft",
+                    "version": "2.8.170-ex112"
                 },
                 {
                     "description": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.",
@@ -145,15 +172,6 @@
                     "version": "1.7.19"
                 },
                 {
-                    "description": "Millénaire is a Minecraft mod that aims to fill the \"emptiness\" left by the default Minecraft Villages by adding new NPC villages loosely based on 11th-century cultures. A village is populated by men, women, and children that each lives their own life and have their own story to tell.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/millenaire/download/2855166",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/103/963/64/64/636341933636382104.png",
-                    "name": "Millénaire",
-                    "timestamp": 1581794539,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/millenaire",
-                    "version": "8.0.1"
-                },
-                {
                     "description": "This mod adds Multiple types of storage;",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/multistorage/download/2710024",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/250/400/64/64/637178603152530025.png",
@@ -181,7 +199,16 @@
                     "version": "1.12.2 HD U F5"
                 },
                 {
-                    "description": "A craftstudio importer and rendering library. ",
+                    "description": "Ever tried to play in hardcore mod? You can die within seconds. One step too far can be your end. This can be pretty frustrating, especially if you play with friends. You might want to have things difficult, but not like that? PlayerRevive is a good compromise. It allows to revive a player within 60 seconds after death. A stupid mistake must not be your end. Now it's up to your friends.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/playerrevive/download/2908777",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/97/938/64/64/636295724985402020.png",
+                    "name": "PlayerRevive",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/playerrevive",
+                    "version": "1.2.32"
+                },
+                {
+                    "description": "A craftstudio importer and rendering library.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/ptrlib/download/2685154",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/148/601/64/64/636583739130384691.png",
                     "name": "PTRLib",
@@ -206,6 +233,15 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/roost",
                     "version": "2.0.10"
+                },
+                {
+                    "description": "Standalone Jar file for the Redstone Flux API.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/redstone-flux/download/2623090",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/105/500/64/64/636353215194575027.png",
+                    "name": "Redstone Flux",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/redstone-flux",
+                    "version": "1.0.6"
                 },
                 {
                     "description": "SecurityCraft adds exactly what the name suggests! Lasers, retinal scanners, keypads, unbreakable doors and more. Pairs well with mods such as Smart Moving, Secret Rooms, and the Wall Jump mod. Feel free to download it, and be protected from anyone breaking into your house, even those pesky creepers! For more information, pictures, recipes, and other stuff, refer to the ingame documentation via /sc help.",
@@ -242,15 +278,6 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/travellers-backpack",
                     "version": "1.0.22.22"
-                },
-                {
-                    "description": "Treasure2! adds to the thrill of discovery in Minecraft. This mod adds various new and rare chests of treasure to be discovered. The chests are secured by an assortment of locks and can only be unlocked by finding the corresponding keys.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/treasure2/download/2894117",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/145/260/64/64/636561476967448455.png",
-                    "name": "Treasure2!",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/treasure2",
-                    "version": "1.10.0"
                 }
             ],
             "instructions": [
@@ -268,7 +295,7 @@
             "addons": [
                 {
                     "description": "Minecraft Custom Profile with all the addons used in the server",
-                    "download": "https://drive.google.com/open?id=172wdLH_svTVFKG1yCHphtVsB9ezYIQ2u",
+                    "download": "https://drive.google.com/open?id=1PIxF9GCR8342A5jPLtwAxnIVuiXrt9yN",
                     "image": "",
                     "name": "Custom Profile",
                     "timestamp": 1581794539,
@@ -277,7 +304,7 @@
                 },
                 {
                     "description": "Minecraft Custom Profile with all the required addons needed to get in the server",
-                    "download": "https://drive.google.com/open?id=1es_2k8GopB_QUYLHb-eY2QtEfOXSLZU_",
+                    "download": "https://drive.google.com/open?id=1gLjKd1Km9yrf9IAdHhmMxjBPKNZk4utz",
                     "image": "",
                     "name": "Custom Profile",
                     "timestamp": 1581794539,

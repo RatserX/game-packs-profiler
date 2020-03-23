@@ -92,9 +92,7 @@ const HomeComponent = (props: Props) => {
       <AppBar color="default" position="fixed">
         <Toolbar>
           <Avatar
-            src={
-              profileState.configuration.game?.image || "/images/ph-game.png"
-            }
+            src={profileState.configuration.game?.image || "images/ph-game.png"}
             style={{
               marginRight: "16px"
             }}

@@ -30,7 +30,7 @@ const HomePack = (props: Props) => {
   const { pack } = props;
 
   return (
-    <Grid className="home-pack" item zeroMinWidth>
+    <Grid className="home-pack" item xs={12} zeroMinWidth>
       <Box mt={2}>
         <Card elevation={3} variant="elevation" square>
           <CardHeader
@@ -54,7 +54,7 @@ const HomePack = (props: Props) => {
             }
             avatar={
               <Avatar
-                src={pack.image || "/images/ph-pack.png"}
+                src={pack.image || "images/ph-pack.png"}
                 variant="rounded"
               />
             }
