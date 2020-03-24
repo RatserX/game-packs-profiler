@@ -55,6 +55,15 @@
                     "version": "1.0.1.44"
                 },
                 {
+                    "description": "Clumps groups XP orbs together into a single entity to reduce lag when there are many in a small area. Ontop of this, it also makes the player immediately collect the orbs once they touch the player, so you are not stuck with a bunch of orbs in your face.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/clumps/download/2666198",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/84/193/64/64/636193647832736518_animated.gif",
+                    "name": "(Optional) Clumps",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/clumps",
+                    "version": "3.1.2"
+                },
+                {
                     "description": "Contains libraries for 3D math and transformations, model rendering, packets, config, colours, asm and a few other things.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8/download/2779848",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/36/121/64/64/635934545550873146.jpeg",
@@ -101,12 +110,12 @@
                 },
                 {
                     "description": "Nothing else than a simple core mod required by most of my mods, containing useful features like a gui-api, packet system, dynamic rendering system, easy asm transformation name manager and other useful stuff.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2908776",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2910976",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/86/225/64/64/636207446427836220.png",
                     "name": "CreativeCore",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/creativecore",
-                    "version": "1.10.8"
+                    "version": "1.10.9"
                 },
                 {
                     "description": "Decocraft adds in over 3000 decorations for your Minecraft World. This mod will definitely give you a lot more variety when decorating your builds. Many of the items are actually functional as well!",
@@ -134,6 +143,33 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/dynamictrees",
                     "version": "0.9.7"
+                },
+                {
+                    "description": "This mod does a couple things relating to the vanilla furnace, blast furnace, and smoker so that they run faster during their update method, improving TPS.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace/download/2706111",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/164/243/64/64/636686097562167838.png",
+                    "name": "(Optional) FastFurnace",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace",
+                    "version": "1.3.1"
+                },
+                {
+                    "description": "This mod does a couple things relating to the vanilla workbench so that it runs faster and causes less network traffic.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench/download/2716379",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/164/244/64/64/636686097718417988.png",
+                    "name": "(Optional) FastWorkbench",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench",
+                    "version": "1.7.2"
+                },
+                {
+                    "description": "FoamFix is a mod designed to optimize post-1.7.10 modded Minecraft using simple, targeted optimizations. Observations show that Java heap usage (measured using VisualVM on the main menu) can drop by as much as 50%!",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod/download/2845668",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/123/622/64/64/636415911008136405.png",
+                    "name": "(Optional) FoamFix",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod",
+                    "version": "0.10.10"
                 },
                 {
                     "description": "HWYLA (Pronounced \"Hwhy-la\", similar to \"Coo-Hwhip\")",
@@ -170,6 +206,15 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap",
                     "version": "5.7.0"
+                },
+                {
+                    "description": "LagGoggles is a profiler where you can see timings in the world, visually. It comes with a custom GUI using a configurable keybind. It's compatible with SpongeForge and Mixin!",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/laggoggles/download/2901773",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/134/37/64/64/636488657582083451.png",
+                    "name": "(Optional) LagGoggles",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/laggoggles",
+                    "version": "4.11-92"
                 },
                 {
                     "description": "LLibrary is a small mod that contains shared code for other mods.",
@@ -289,13 +334,31 @@
                     "version": "1.5.4"
                 },
                 {
-                    "description": "Expanding Minecraft Thermally! A server-friendly and content-rich blend of magic and technology!",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/thermal-expansion/download/2715789",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/4/884/64/64/635351427908594238.png",
-                    "name": "Thermal Expansion",
+                    "description": "Weapons Galore! A whole new arsenal of weaponry made for Minecraft. Inspired by Balkon's WeaponMod, it adds new versions of weapons from that mod, as well expanding the arsenal with a bunch of original weapons, including a variety of swords, polearms, blunt and ranged weapons.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry/download/2830166",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/251/833/64/64/637185691308516002.png",
+                    "name": "Spartan Weaponry",
                     "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-expansion",
-                    "version": "5.5.4.43"
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry",
+                    "version": "1.3.8"
+                },
+                {
+                    "description": "Surge is an open source mod which aims to improve the load time and performance of the game.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/surge/download/2665849",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/168/445/64/64/636709256650418668.png",
+                    "name": "Surge",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/surge",
+                    "version": "2.0.77"
+                },
+                {
+                    "description": "Thermal gets Dynamic! Adds ducts - blocks for transporting Items, Fluids, Redstone Flux, and even Players!",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/thermal-dynamics/download/2716138",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/14/24/64/64/635583020784370905.png",
+                    "name": "Thermal Dynamics",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-dynamics",
+                    "version": "2.5.5.21"
                 },
                 {
                     "description": "The Foundation of a Thermally enhanced world!",
