@@ -58,7 +58,7 @@
                     "description": "Clumps groups XP orbs together into a single entity to reduce lag when there are many in a small area. Ontop of this, it also makes the player immediately collect the orbs once they touch the player, so you are not stuck with a bunch of orbs in your face.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/clumps/download/2666198",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/84/193/64/64/636193647832736518_animated.gif",
-                    "name": "(Optional) Clumps",
+                    "name": "Clumps",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/clumps",
                     "version": "3.1.2"
@@ -148,7 +148,7 @@
                     "description": "This mod does a couple things relating to the vanilla furnace, blast furnace, and smoker so that they run faster during their update method, improving TPS.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace/download/2706111",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/164/243/64/64/636686097562167838.png",
-                    "name": "(Optional) FastFurnace",
+                    "name": "FastFurnace",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace",
                     "version": "1.3.1"
@@ -157,7 +157,7 @@
                     "description": "This mod does a couple things relating to the vanilla workbench so that it runs faster and causes less network traffic.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench/download/2716379",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/164/244/64/64/636686097718417988.png",
-                    "name": "(Optional) FastWorkbench",
+                    "name": "FastWorkbench",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench",
                     "version": "1.7.2"
@@ -251,6 +251,15 @@
                     "timestamp": 1581794539,
                     "url": "https://optifine.net/home",
                     "version": "1.12.2 HD U F5"
+                },
+                {
+                    "description": "Phosphor is a Minecraft mod which works to optimize one of Minecraft's most inefficient areas-- the lighting engine. It works on both the client and server, and can be installed on servers without requiring clients to also have the mod. With Phosphor, the time spent generating chunks can be reduced by almost 50% for some dimensions, and server tick rate can be just as greatly improved by freeing up the CPU to work on other tasks.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/phosphor/download/2747710",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/197/528/64/64/636893154816863853.png",
+                    "name": "(Optional) Phosphor",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/phosphor",
+                    "version": "0.2.6+build50"
                 },
                 {
                     "description": "Ever tried to play in hardcore mod? You can die within seconds. One step too far can be your end. This can be pretty frustrating, especially if you play with friends. You might want to have things difficult, but not like that? PlayerRevive is a good compromise. It allows to revive a player within 60 seconds after death. A stupid mistake must not be your end. Now it's up to your friends.",
