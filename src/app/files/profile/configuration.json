@@ -155,12 +155,12 @@
                 },
                 {
                     "description": "This mod does a couple things relating to the vanilla workbench so that it runs faster and causes less network traffic.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench/download/2716379",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench/download/2838777",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/164/244/64/64/636686097718417988.png",
                     "name": "FastWorkbench",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/fastworkbench",
-                    "version": "1.7.2"
+                    "version": "1.7.3"
                 },
                 {
                     "description": "FoamFix is a mod designed to optimize post-1.7.10 modded Minecraft using simple, targeted optimizations. Observations show that Java heap usage (measured using VisualVM on the main menu) can drop by as much as 50%!",
@@ -355,7 +355,7 @@
                     "description": "Surge is an open source mod which aims to improve the load time and performance of the game.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/surge/download/2665849",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/168/445/64/64/636709256650418668.png",
-                    "name": "Surge",
+                    "name": "(Optional) Surge",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/surge",
                     "version": "2.0.77"
