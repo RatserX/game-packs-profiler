@@ -37,15 +37,6 @@
                     "version": "1.5.3"
                 },
                 {
-                    "description": "Brandon's Core is a library mod used by most of my mods. It is no longer a core mod as the name would suggest but it does still contain a lot of the core code used by my mods including but not limited to base classes for various tiles, blocks and items, A powerful modular gui system and a lot of other miscellaneous utilities.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/brandons-core/download/2867147",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/19/329/64/64/635693356033460215.png",
-                    "name": "Brandon's Core",
-                    "timestamp": 1581794539,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/brandons-core",
-                    "version": "2.4.18.210"
-                },
-                {
                     "description": "Chisel adds a huge variety of decorative blocks to the game. The mod is very useful for people who like the construction aspect of Minecraft.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/chisel/download/2813538",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/24/517/64/64/635758617021943603.png",
@@ -125,15 +116,6 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/decocraft",
                     "version": "2.6.3"
-                },
-                {
-                    "description": "This is a mod that adds a lot of high tier items such as tools and armor as well as some high tier energy storage and a lot of other random features such as: //TODO Update this darn desription... //TODO fix typos in this desription.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/draconic-evolution/download/2867186",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/9/890/64/64/635440874545018659.png",
-                    "name": "Draconic Evolution",
-                    "timestamp": 1581794539,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/draconic-evolution",
-                    "version": "2.3.25.351"
                 },
                 {
                     "description": "To create more dynamic, aesthetic, fun and natural looking trees while respecting the Minecraft graphic stylization and enforcing a narrow project scope that keeps things simple.",
