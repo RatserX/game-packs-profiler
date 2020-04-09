@@ -55,33 +55,6 @@
                     "version": "3.1.2"
                 },
                 {
-                    "description": "Contains libraries for 3D math and transformations, model rendering, packets, config, colours, asm and a few other things.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8/download/2779848",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/36/121/64/64/635934545550873146.jpeg",
-                    "name": "CodeChicken Lib 1.8.+",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8",
-                    "version": "3.2.3.358"
-                },
-                {
-                    "description": "Contains Core Functionality for all Team CoFH mods. Also does some really cool stuff on its own!",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/cofh-core/download/2716100",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/14/190/64/64/635588122347757413.png",
-                    "name": "CoFH Core",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/cofh-core",
-                    "version": "4.6.3.27"
-                },
-                {
-                    "description": "This stuff used to be in CoFH Core. We'll be expanding on it a bit. :)",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/cofh-world/download/2715784",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/104/743/64/64/636348016483205863.png",
-                    "name": "CoFH World",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/cofh-world",
-                    "version": "1.3.1.7"
-                },
-                {
                     "description": "Allows resource packs to add connected textures, emissive rendering, and much more. A resource pack which adds these effects to vanilla, and some select mods, can be found here.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/ctm/download/2832564",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/102/452/64/64/636330854499701192.png",
@@ -235,6 +208,15 @@
                     "version": "1.12.2 HD U F5"
                 },
                 {
+                    "description": "Holds shared code for use in my mods.  ",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/placebo/download/2694382",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/134/260/64/64/636490526725752670.png",
+                    "name": "Placebo",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/placebo",
+                    "version": "1.6.0"
+                },
+                {
                     "description": "Phosphor is a Minecraft mod which works to optimize one of Minecraft's most inefficient areas-- the lighting engine. It works on both the client and server, and can be installed on servers without requiring clients to also have the mod. With Phosphor, the time spent generating chunks can be reduced by almost 50% for some dimensions, and server tick rate can be just as greatly improved by freeing up the CPU to work on other tasks.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/phosphor/download/2747710",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/197/528/64/64/636893154816863853.png",
@@ -251,15 +233,6 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/playerrevive",
                     "version": "1.2.32"
-                },
-                {
-                    "description": "The goal of this project is to create a truly universal documentation mod by leveraging the power of the minecraft community.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/project-intelligence/download/2833640",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/180/828/64/64/636795769152717985_animated.gif",
-                    "name": "Project Intelligence",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/project-intelligence",
-                    "version": "1.0.9.28"
                 },
                 {
                     "description": "A craftstudio importer and rendering library.",
@@ -287,15 +260,6 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/roost",
                     "version": "2.0.10"
-                },
-                {
-                    "description": "Standalone Jar file for the Redstone Flux API.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/redstone-flux/download/2623090",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/105/500/64/64/636353215194575027.png",
-                    "name": "Redstone Flux",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/redstone-flux",
-                    "version": "1.0.6"
                 },
                 {
                     "description": "SecurityCraft adds exactly what the name suggests! Lasers, retinal scanners, keypads, unbreakable doors and more. Pairs well with mods such as Smart Moving, Secret Rooms, and the Wall Jump mod. Feel free to download it, and be protected from anyone breaking into your house, even those pesky creepers! For more information, pictures, recipes, and other stuff, refer to the ingame documentation via /sc help.",
@@ -341,24 +305,6 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/surge",
                     "version": "2.0.77"
-                },
-                {
-                    "description": "Thermal gets Dynamic! Adds ducts - blocks for transporting Items, Fluids, Redstone Flux, and even Players!",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/thermal-dynamics/download/2716138",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/14/24/64/64/635583020784370905.png",
-                    "name": "Thermal Dynamics",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-dynamics",
-                    "version": "2.5.5.21"
-                },
-                {
-                    "description": "The Foundation of a Thermally enhanced world!",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/thermal-foundation/download/2715788",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/14/658/64/64/635601681015233170.png",
-                    "name": "Thermal Foundation",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/thermal-foundation",
-                    "version": "2.6.3.27"
                 },
                 {
                     "description": "...is a Minecraft mod, which adds backpacks. All the backpacks come from JavierDarkona's Mod Adventure Backpack. Traveller's Backpack is the unofficial port to 1.12.2",
@@ -414,10 +360,17 @@
     "servers": [
         {
             "address": "192.160.12.12",
-            "description": "A server for the game Minecraft",
+            "description": "A server for the game Minecraft - Spigot",
             "image": "",
             "name": "Minecraft Server",
             "port": 25565
+        },
+        {
+            "address": "192.160.12.12",
+            "description": "A server for the game Minecraft - SpongeForge",
+            "image": "",
+            "name": "Forge Server",
+            "port": 25566
         }
     ]
 }
