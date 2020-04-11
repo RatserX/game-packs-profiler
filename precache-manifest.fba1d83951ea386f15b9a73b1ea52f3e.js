@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f38f614bcc3e713ec0c130ff32051518",
+    "revision": "e0799f2665f0ef44cc53189d1c4294f7",
     "url": "/game-packs-profiler/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-packs-profiler/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "59627be012d05be41998",
+    "revision": "c11a865d275899570d57",
     "url": "/game-packs-profiler/static/css/main.c5eaa5be.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-packs-profiler/static/js/2.4e4ca337.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59627be012d05be41998",
-    "url": "/game-packs-profiler/static/js/main.ba770cd7.chunk.js"
+    "revision": "c11a865d275899570d57",
+    "url": "/game-packs-profiler/static/js/main.e1e626d2.chunk.js"
   },
   {
     "revision": "923574ebb546017a3e19",
