@@ -296,15 +296,6 @@
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/travellers-backpack",
                     "version": "1.0.23.23"
-                },
-                {
-                    "description": "VanillaFix is a mod that improves performance and fixes bugs and annoyances in vanilla Minecraft. Tripling FPS is common, try it for yourself if you don't believe it! Also, with VanillaFix installed, Minecraft will no longer fully crash, but rather kick you out to the main menu and offer to upload your report to a paste site so that you can easily send it to others (test it by pressing F3 + C in game)!",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/vanillafix/download/2915154",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/151/327/64/64/636603225300587402.png",
-                    "name": "(Optional) VanillaFix",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/vanillafix",
-                    "version": "1.0.10-150"
                 }
             ],
             "instructions": [
