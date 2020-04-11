@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/game-packs-profiler/static/css/main.c5eaa5be.chunk.css",
-    "main.js": "/game-packs-profiler/static/js/main.e1e626d2.chunk.js",
-    "main.js.map": "/game-packs-profiler/static/js/main.e1e626d2.chunk.js.map",
+    "main.js": "/game-packs-profiler/static/js/main.d8ee458b.chunk.js",
+    "main.js.map": "/game-packs-profiler/static/js/main.d8ee458b.chunk.js.map",
     "runtime-main.js": "/game-packs-profiler/static/js/runtime-main.630a136b.js",
     "runtime-main.js.map": "/game-packs-profiler/static/js/runtime-main.630a136b.js.map",
     "static/css/2.47e06e2e.chunk.css": "/game-packs-profiler/static/css/2.47e06e2e.chunk.css",
     "static/js/2.4e4ca337.chunk.js": "/game-packs-profiler/static/js/2.4e4ca337.chunk.js",
     "static/js/2.4e4ca337.chunk.js.map": "/game-packs-profiler/static/js/2.4e4ca337.chunk.js.map",
     "index.html": "/game-packs-profiler/index.html",
-    "precache-manifest.fba1d83951ea386f15b9a73b1ea52f3e.js": "/game-packs-profiler/precache-manifest.fba1d83951ea386f15b9a73b1ea52f3e.js",
+    "precache-manifest.8b3cd4382eca071af198d49021413d51.js": "/game-packs-profiler/precache-manifest.8b3cd4382eca071af198d49021413d51.js",
     "service-worker.js": "/game-packs-profiler/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/game-packs-profiler/static/css/2.47e06e2e.chunk.css.map",
     "static/css/main.c5eaa5be.chunk.css.map": "/game-packs-profiler/static/css/main.c5eaa5be.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.4e4ca337.chunk.js",
     "static/css/main.c5eaa5be.chunk.css",
-    "static/js/main.e1e626d2.chunk.js"
+    "static/js/main.d8ee458b.chunk.js"
   ]
 }
