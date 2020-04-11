@@ -38,12 +38,21 @@
                 },
                 {
                     "description": "Chisel adds a huge variety of decorative blocks to the game. The mod is very useful for people who like the construction aspect of Minecraft.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/chisel/download/2813538",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/chisel/download/2915375",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/24/517/64/64/635758617021943603.png",
                     "name": "Chisel",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/chisel",
-                    "version": "1.0.1.44"
+                    "version": "1.0.2.45"
+                },
+                {
+                    "description": "This mod adds a rideable creature called a Chocobo (from the final fantasy series) to the game, this includes different colors, stats, and attributes.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/chococraft-3/download/2700246",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/200/18/64/64/636910691765787590.png",
+                    "name": "ChocoCraft 3",
+                    "timestamp": 1581794539,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/chococraft-3",
+                    "version": "0.9.8.0"
                 },
                 {
                     "description": "Clumps groups XP orbs together into a single entity to reduce lag when there are many in a small area. Ontop of this, it also makes the player immediately collect the orbs once they touch the player, so you are not stuck with a bunch of orbs in your face.",
@@ -56,30 +65,30 @@
                 },
                 {
                     "description": "Allows resource packs to add connected textures, emissive rendering, and much more. A resource pack which adds these effects to vanilla, and some select mods, can be found here.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/ctm/download/2832564",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/ctm/download/2915363",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/102/452/64/64/636330854499701192.png",
                     "name": "ConnectedTexturesMod",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/ctm",
-                    "version": "1.0.1.30"
+                    "version": "1.0.2.31"
                 },
                 {
                     "description": "\" Corail Tombstone keeps you from losing your belongings on death, with many features of survivability and dimensional teleportation, in a medieval fantasy atmosphere related to the grave's souls. \"",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/2904987",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/2921044",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/130/354/64/64/636459742199274923.jpeg",
                     "name": "Corail Tombstone",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone",
-                    "version": "3.7.0"
+                    "version": "3.7.2"
                 },
                 {
                     "description": "Nothing else than a simple core mod required by most of my mods, containing useful features like a gui-api, packet system, dynamic rendering system, easy asm transformation name manager and other useful stuff.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2910976",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/creativecore/download/2921730",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/86/225/64/64/636207446427836220.png",
                     "name": "CreativeCore",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/creativecore",
-                    "version": "1.10.9"
+                    "version": "1.10.10"
                 },
                 {
                     "description": "Decocraft adds in over 3000 decorations for your Minecraft World. This mod will definitely give you a lot more variety when decorating your builds. Many of the items are actually functional as well!",
@@ -89,15 +98,6 @@
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/decocraft",
                     "version": "2.6.3"
-                },
-                {
-                    "description": "To create more dynamic, aesthetic, fun and natural looking trees while respecting the Minecraft graphic stylization and enforcing a narrow project scope that keeps things simple.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/dynamictrees/download/2870267",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/111/638/64/64/636389419656399314.png",
-                    "name": "Dynamic Trees",
-                    "timestamp": 1581794539,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/dynamictrees",
-                    "version": "0.9.7"
                 },
                 {
                     "description": "This mod does a couple things relating to the vanilla furnace, blast furnace, and smoker so that they run faster during their update method, improving TPS.",
@@ -155,12 +155,12 @@
                 },
                 {
                     "description": "JourneyMap is a client+server mod for Forge which maps your Minecraft world in real-time as you explore. You can view the map in a web browser or in-game as a Minimap or full-screen.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/journeymap/download/2888880",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/journeymap/download/2916002",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/9/144/64/64/635421614078544069.png",
                     "name": "(Optional) JourneyMap",
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap",
-                    "version": "5.7.0"
+                    "version": "5.7.1"
                 },
                 {
                     "description": "LagGoggles is a profiler where you can see timings in the world, visually. It comes with a custom GUI using a configurable keybind. It's compatible with SpongeForge and Mixin!",
@@ -245,12 +245,12 @@
                 },
                 {
                     "description": "RandomPatches is a mod that contains a bunch of miscellaneous patches for Minecraft. RandomPatches only contains features that require ASM transformers. Tweaks that don't require ASM transformers go in RandomTweaks, which I recommend as a companion mod.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/randompatches/download/2863699",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/randompatches/download/2921432",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/137/948/64/64/636518346385385655.png",
                     "name": "(Optional) RandomPatches",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/randompatches",
-                    "version": "1.21.0.0"
+                    "version": "1.21.0.1"
                 },
                 {
                     "description": "Craft a chicken catcher with an egg, a stick, and a feather. Use the catcher on a chicken to capture it and add it to your inventory.",
@@ -280,24 +280,6 @@
                     "version": "3.5.9"
                 },
                 {
-                    "description": "Spartan Shields is a mod for Minecraft that adds a variety of new shields to the game.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/spartan-shields/files/2712229",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/199/901/64/64/636909850537954133.png",
-                    "name": "Spartan Shields",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-shields",
-                    "version": "1.5.4"
-                },
-                {
-                    "description": "Weapons Galore! A whole new arsenal of weaponry made for Minecraft. Inspired by Balkon's WeaponMod, it adds new versions of weapons from that mod, as well expanding the arsenal with a bunch of original weapons, including a variety of swords, polearms, blunt and ranged weapons.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry/download/2830166",
-                    "image": "https://media.forgecdn.net/avatars/thumbnails/251/833/64/64/637185691308516002.png",
-                    "name": "Spartan Weaponry",
-                    "timestamp": 1583113389,
-                    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry",
-                    "version": "1.3.8"
-                },
-                {
                     "description": "Surge is an open source mod which aims to improve the load time and performance of the game.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/surge/download/2665849",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/168/445/64/64/636709256650418668.png",
@@ -308,12 +290,21 @@
                 },
                 {
                     "description": "...is a Minecraft mod, which adds backpacks. All the backpacks come from JavierDarkona's Mod Adventure Backpack. Traveller's Backpack is the unofficial port to 1.12.2",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/travellers-backpack/download/2870219",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/travellers-backpack/download/2914992",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/206/399/64/64/636957122858610796.png",
                     "name": "Traveller's Backpack",
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/travellers-backpack",
-                    "version": "1.0.22.22"
+                    "version": "1.0.23.23"
+                },
+                {
+                    "description": "VanillaFix is a mod that improves performance and fixes bugs and annoyances in vanilla Minecraft. Tripling FPS is common, try it for yourself if you don't believe it! Also, with VanillaFix installed, Minecraft will no longer fully crash, but rather kick you out to the main menu and offer to upload your report to a paste site so that you can easily send it to others (test it by pressing F3 + C in game)!",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/vanillafix/download/2915154",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/151/327/64/64/636603225300587402.png",
+                    "name": "(Optional) VanillaFix",
+                    "timestamp": 1583113389,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/vanillafix",
+                    "version": "1.0.10-150"
                 }
             ],
             "instructions": [
@@ -331,7 +322,7 @@
             "addons": [
                 {
                     "description": "Minecraft Custom Profile with all the addons used in the server",
-                    "download": "https://drive.google.com/open?id=1PIxF9GCR8342A5jPLtwAxnIVuiXrt9yN",
+                    "download": "https://drive.google.com/open?id=1gXI-K-1MMiRKZpM41tiYUwEFYLmJPXjD",
                     "image": "",
                     "name": "Custom Profile",
                     "timestamp": 1581794539,
@@ -340,7 +331,7 @@
                 },
                 {
                     "description": "Minecraft Custom Profile with all the required addons needed to get in the server",
-                    "download": "https://drive.google.com/open?id=1gLjKd1Km9yrf9IAdHhmMxjBPKNZk4utz",
+                    "download": "https://drive.google.com/open?id=1b0c0FeHJNbTHBOZ9huN00E7hnHH5P-Fj",
                     "image": "",
                     "name": "Custom Profile",
                     "timestamp": 1581794539,
