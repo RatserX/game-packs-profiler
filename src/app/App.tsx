@@ -2,33 +2,42 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import environment from "../environment/environment";
 import { State } from "./store/Store";
-import { setConfiguration } from "./store/profile/Profile.action";
-import { isObjectNullOrEmpty } from "./helpers/Function.helper";
+import { setProfile } from "./store/configuration/Configuration.action";
+import { setPublicUrl } from "./store/location/Location.action";
+import {
+  isObjectNullOrEmpty,
+  isStringNullOrEmpty,
+} from "./helpers/Function.helper";
 import Layout from "./layout/Layout";
 
 const mapStateToProperties = (state: State) => ({
-  profileState: state.profile
+  configurationState: state.configuration,
+  locationState: state.location,
 });
 
 const mapDispatchToProps = {
-  setConfiguration
+  setProfile,
+  setPublicUrl,
 };
 
 const appConnector = connect(mapStateToProperties, mapDispatchToProps);
 
 type ConnectorProps = ConnectedProps<typeof appConnector>;
 
-type Props = ConnectorProps & {};
+type Props = ConnectorProps;
 
 const AppComponent = (props: Props) => {
-  const { profileState, setConfiguration } = props;
+  const { configurationState, locationState, setProfile, setPublicUrl } = props;
 
   useEffect(() => {
-    if (isObjectNullOrEmpty(profileState.configuration)) {
-      setConfiguration("configuration.json");
+    if (isObjectNullOrEmpty(configurationState.profile)) {
+      setProfile("profile.json");
     }
-  }, [profileState, setConfiguration]);
 
+    if (isStringNullOrEmpty(locationState.publicUrl)) {
+      setPublicUrl(window.location.href);
+    }
+  }, [configurationState, locationState, setProfile, setPublicUrl]);
   return <Layout themeType={environment.theme} />;
 };
 

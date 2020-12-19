@@ -1,4 +1,4 @@
-import { Instance, InstanceValue } from "../../helpers/Interface.helper";
+import { Instance, InstanceValue } from "./Expand.interface";
 
 export const SET_INSTANCE = "EXPAND_1";
 export const SET_INSTANCE_IS_ENABLED = "EXPAND_2";

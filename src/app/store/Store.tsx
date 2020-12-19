@@ -1,11 +1,13 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import Thunk from "redux-thunk";
+import ConfigurationReducer from "./configuration/Configuration.reducer";
 import ExpandReducer from "./expand/Expand.reducer";
-import ProfileReducer from "./profile/Profile.reducer";
+import LocationReducer from "./location/Location.reducer";
 
 const CombinedReducer = combineReducers({
+  configuration: ConfigurationReducer,
   expand: ExpandReducer,
-  profile: ProfileReducer
+  location: LocationReducer,
 });
 
 export type State = ReturnType<typeof CombinedReducer>;

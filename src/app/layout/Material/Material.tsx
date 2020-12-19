@@ -13,7 +13,7 @@ type RouterProps = {
   children?: JSX.Element;
 };
 
-const Element = ({ children }: ElementProps) => {
+const Element = ({ children = <></> }: ElementProps): JSX.Element => {
   return (
     <div>
       <Helmet>
@@ -31,7 +31,7 @@ const Element = ({ children }: ElementProps) => {
   );
 };
 
-const Router = ({ children }: RouterProps) => {
+const Router = ({ children }: RouterProps): JSX.Element => {
   return (
     <div>
       <BrowserRouter basename={process.env.PUBLIC_URL}>

@@ -10,11 +10,11 @@ type RouterProps = {
   children?: JSX.Element;
 };
 
-const Element = ({ children }: ElementProps) => {
+const Element = ({ children }: ElementProps): JSX.Element => {
   const theme = createMuiTheme({
     palette: {
-      type: "dark"
-    }
+      type: "dark",
+    },
   });
 
   return (
@@ -28,7 +28,7 @@ const Element = ({ children }: ElementProps) => {
   );
 };
 
-const Router = ({ children }: RouterProps) => {
+const Router = ({ children }: RouterProps): JSX.Element => {
   return (
     <div>
       <Material.Router>{children}</Material.Router>

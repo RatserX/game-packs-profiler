@@ -2,11 +2,11 @@ import {
   ExpandState,
   ExpandAction,
   SET_INSTANCE,
-  SET_INSTANCE_IS_ENABLED
+  SET_INSTANCE_IS_ENABLED,
 } from "./Expand.type";
 
 const initialState: ExpandState = {
-  instance: {}
+  instance: {},
 };
 
 const ExpandReducer = (
@@ -18,17 +18,17 @@ const ExpandReducer = (
       return {
         ...state,
         instance: {
-          [action.instanceKey]: action.instanceValue
-        }
+          [action.instanceKey]: action.instanceValue,
+        },
       };
     case SET_INSTANCE_IS_ENABLED:
       return {
         ...state,
         instance: {
           [action.instanceKey]: {
-            isEnabled: action.instanceValueIsEnabled
-          }
-        }
+            isEnabled: action.instanceValueIsEnabled,
+          },
+        },
       };
     default:
       return state;

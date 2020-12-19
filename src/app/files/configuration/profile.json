@@ -122,6 +122,7 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod/download/2845668",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/123/622/64/64/636415911008136405.png",
                     "name": "(Optional) FoamFix",
+                    "required": false,
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod",
                     "version": "0.10.10"
@@ -131,6 +132,7 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/hwyla/download/2568751",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/63/499/64/64/636143286314870563_animated.gif",
                     "name": "(Optional) Hwyla",
+                    "required": false,
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/hwyla",
                     "version": "1.8.26-B41"
@@ -149,6 +151,7 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/jei/download/2847112",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/29/69/64/64/635838945588716414.jpeg",
                     "name": "(Optional) Just Enough Items (JEI)",
+                    "required": false,
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
                     "version": "4.15.0.293"
@@ -167,6 +170,7 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/laggoggles/download/2901773",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/134/37/64/64/636488657582083451.png",
                     "name": "(Optional) LagGoggles",
+                    "required": false,
                     "timestamp": 1583113389,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/laggoggles",
                     "version": "4.11-92"
@@ -194,6 +198,7 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/neat/download/2595310",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/29/326/64/64/635843253254829591.png",
                     "name": "(Optional) Neat",
+                    "required": false,
                     "timestamp": 1581794539,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/neat",
                     "version": "1.4-17"
@@ -203,6 +208,7 @@
                     "download": "https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_F5.jar&x=a3df",
                     "image": "",
                     "name": "(Optional) OptiFine 1.12.2 HD U F5",
+                    "required": false,
                     "timestamp": 1581794539,
                     "url": "https://optifine.net/home",
                     "version": "1.12.2 HD U F5"
@@ -299,7 +305,12 @@
                 }
             ],
             "instructions": [
-                "Install on the respective mods folder"
+                "Download and install <a href=\"https://tlauncher.org/\"><strong>TLauncher</strong></a>",
+                "Open the launcher and choose the Forge version",
+                "Select the <strong>\"Install\"</strong> button and wait for the first run",
+                "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\)",
+                "Move the downloaded addons to the mods folder",
+                "Run the game"
             ]
         },
         {

@@ -1,18 +1,10 @@
-export interface Instance {
-  [key: string]: InstanceValue;
+export interface Profile {
+  game?: ProfileGame;
+  packs?: ProfilePack[];
+  servers?: ProfileServer[];
 }
 
-export interface InstanceValue {
-  isEnabled: boolean;
-}
-
-export interface Configuration {
-  game?: ConfigurationGame;
-  packs?: ConfigurationPack[];
-  servers?: ConfigurationServer[];
-}
-
-export interface ConfigurationGame {
+export interface ProfileGame {
   description: string;
   download: string;
   image: string;
@@ -22,7 +14,7 @@ export interface ConfigurationGame {
   version: string;
 }
 
-export interface ConfigurationPack {
+export interface ProfilePack {
   description: string;
   download: string;
   image: string;
@@ -30,21 +22,22 @@ export interface ConfigurationPack {
   timestamp: number;
   url: string;
   version: string;
-  addons: ConfigurationPackAddon[];
+  addons: ProfilePackAddon[];
   instructions: string[];
 }
 
-export interface ConfigurationPackAddon {
+export interface ProfilePackAddon {
   description: string;
   download: string;
   image: string;
   name: string;
+  required?: boolean;
   timestamp: number;
   url: string;
   version: string;
 }
 
-export interface ConfigurationServer {
+export interface ProfileServer {
   address: string;
   description: string;
   image: string;

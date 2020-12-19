@@ -9,25 +9,37 @@ import {
   IconButton,
   Box,
   Avatar,
-  List
 } from "@material-ui/core";
 import { Info, GetApp } from "@material-ui/icons";
+import { connect, ConnectedProps } from "react-redux";
 import "./HomePack.style.scss";
 import {
-  ConfigurationPack,
-  ConfigurationPackAddon
-} from "../../../helpers/Interface.helper";
+  ProfilePack,
+  ProfilePackAddon,
+} from "../../../store/configuration/Configuration.interface";
 import HomePackAddon from "../HomePackAddon/HomePackAddon.component";
 import HomePackInstruction from "../HomePackInstruction/HomePackInstruction.component";
 import { isStringNullOrEmpty } from "../../../helpers/Function.helper";
+import { State } from "../../../store/Store";
 
-type Props = {
+const mapStateToProperties = (state: State) => ({
+  expandState: state.expand,
+  locationState: state.location,
+});
+
+const mapDispatchToProps = {};
+
+const appConnector = connect(mapStateToProperties, mapDispatchToProps);
+
+type ConnectorProps = ConnectedProps<typeof appConnector>;
+
+type Props = ConnectorProps & {
   key: string;
-  pack: ConfigurationPack;
+  pack: ProfilePack;
 };
 
-const HomePack = (props: Props) => {
-  const { pack } = props;
+const HomePackComponent = (props: Props): JSX.Element => {
+  const { locationState, pack } = props;
 
   return (
     <Grid className="home-pack" item xs={12} zeroMinWidth>
@@ -54,17 +66,19 @@ const HomePack = (props: Props) => {
             }
             avatar={
               <Avatar
-                src={pack.image || "images/ph-pack.png"}
+                src={
+                  pack.image || `${locationState.publicUrl}/images/ph-pack.png`
+                }
                 variant="rounded"
               />
             }
             subheader={<Typography noWrap>{pack.version}</Typography>}
             subheaderTypographyProps={{
-              variant: "subtitle2"
+              variant: "subtitle2",
             }}
             title={<Typography noWrap>{pack.name}</Typography>}
             titleTypographyProps={{
-              variant: "subtitle1"
+              variant: "subtitle1",
             }}
           />
           <CardContent>
@@ -77,21 +91,11 @@ const HomePack = (props: Props) => {
             </Box>
             <Box mt={2}>
               <Grid container spacing={2}>
-                {pack.addons?.map(
-                  (
-                    value: ConfigurationPackAddon,
-                    index: number,
-                    array: ConfigurationPackAddon[]
-                  ) => {
-                    return (
-                      <HomePackAddon
-                        addon={value}
-                        key={index}
-                        id={`${index}`}
-                      />
-                    );
-                  }
-                )}
+                {pack.addons?.map((value: ProfilePackAddon, index: number) => {
+                  return (
+                    <HomePackAddon addon={value} key={index} id={`${index}`} />
+                  );
+                })}
               </Grid>
             </Box>
             <Box mt={2}>
@@ -100,17 +104,15 @@ const HomePack = (props: Props) => {
             </Box>
             <Box mt={2}>
               <Grid container spacing={2}>
-                {pack.instructions?.map(
-                  (value: string, index: number, array: string[]) => {
-                    return (
-                      <HomePackInstruction
-                        instruction={value}
-                        key={index}
-                        id={`${index}`}
-                      />
-                    );
-                  }
-                )}
+                {pack.instructions?.map((value: string, index: number) => {
+                  return (
+                    <HomePackInstruction
+                      instruction={value}
+                      key={index}
+                      id={`${index}`}
+                    />
+                  );
+                })}
               </Grid>
             </Box>
           </CardContent>
@@ -119,5 +121,7 @@ const HomePack = (props: Props) => {
     </Grid>
   );
 };
+
+const HomePack = appConnector(HomePackComponent);
 
 export default HomePack;

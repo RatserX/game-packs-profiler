@@ -12,30 +12,32 @@ import {
   makeStyles,
   Theme,
   createStyles,
-  Box
+  Box,
 } from "@material-ui/core";
 import { GetApp, ExpandMore, Info } from "@material-ui/icons";
 import { connect, ConnectedProps } from "react-redux";
 import "./HomePackAddon.style.scss";
 import {
-  timestampValueToDate,
+  isObjectNull,
   isObjectNullOrEmpty,
-  isStringNullOrEmpty
+  isStringNullOrEmpty,
+  timestampValueToDate,
 } from "../../../helpers/Function.helper";
-import { ConfigurationPackAddon } from "../../../helpers/Interface.helper";
-import { State } from "../../../store/Store";
+import { ProfilePackAddon } from "../../../store/configuration/Configuration.interface";
 import {
   setInstance,
-  setInstanceIsEnabled
+  setInstanceIsEnabled,
 } from "../../../store/expand/Expand.action";
+import { State } from "../../../store/Store";
 
 const mapStateToProperties = (state: State) => ({
-  expandState: state.expand
+  expandState: state.expand,
+  locationState: state.location,
 });
 
 const mapDispatchToProps = {
   setInstance,
-  setInstanceIsEnabled
+  setInstanceIsEnabled,
 };
 
 const appConnector = connect(mapStateToProperties, mapDispatchToProps);
@@ -43,7 +45,7 @@ const appConnector = connect(mapStateToProperties, mapDispatchToProps);
 type ConnectorProps = ConnectedProps<typeof appConnector>;
 
 type Props = ConnectorProps & {
-  addon: ConfigurationPackAddon;
+  addon: ProfilePackAddon;
   id: string;
 };
 
@@ -52,21 +54,35 @@ const useStyles = makeStyles((theme: Theme) =>
     collapse: {
       transform: "rotate(0deg)",
       transition: theme.transitions.create("transform", {
-        duration: theme.transitions.duration.shortest
-      })
+        duration: theme.transitions.duration.shortest,
+      }),
     },
     expand: {
-      transform: "rotate(180deg)"
-    }
+      transform: "rotate(180deg)",
+    },
+    disablePaddingBottom: {
+      paddingBottom: "0",
+    },
+    disablePaddingTop: {
+      paddingTop: "0",
+    },
   })
 );
 
-const HomePackAddonComponent = (props: Props) => {
-  const { expandState, setInstanceIsEnabled, addon, id } = props;
+const HomePackAddonComponent = (props: Props): JSX.Element => {
+  const {
+    expandState,
+    locationState,
+    setInstance,
+    setInstanceIsEnabled,
+    addon,
+    id,
+  } = props;
 
   const classes = useStyles();
 
-  timestampValueToDate(addon.timestamp);
+  const date = timestampValueToDate(addon.timestamp);
+  const required = isObjectNull(addon.required) ? true : addon.required;
 
   const instanceKey = `HOMEPACKADDON${id}`;
   const isEnabled = expandState.instance[instanceKey]?.isEnabled;
@@ -74,10 +90,10 @@ const HomePackAddonComponent = (props: Props) => {
   useEffect(() => {
     if (isObjectNullOrEmpty(expandState.instance)) {
       setInstance(instanceKey, {
-        isEnabled: false
+        isEnabled: false,
       });
     }
-  }, [expandState, instanceKey]);
+  }, [expandState, instanceKey, setInstance, setInstanceIsEnabled]);
 
   const handleDescriptionExpandClick = () => {
     setInstanceIsEnabled(instanceKey, !isEnabled);
@@ -98,17 +114,21 @@ const HomePackAddonComponent = (props: Props) => {
           <CardHeader
             avatar={
               <Avatar
-                src={addon.image || "images/ph-addon.png"}
+                src={
+                  addon.image ||
+                  `${locationState.publicUrl}/images/ph-addon.png`
+                }
                 variant="rounded"
               />
             }
+            className="disable-padding-bottom"
             subheader={
               <Typography noWrap variant="subtitle2">
                 {addon.version}
               </Typography>
             }
             subheaderTypographyProps={{
-              variant: "subtitle2"
+              variant: "subtitle2",
             }}
             title={
               <Typography noWrap variant="subtitle1">
@@ -116,10 +136,28 @@ const HomePackAddonComponent = (props: Props) => {
               </Typography>
             }
             titleTypographyProps={{
-              variant: "subtitle1"
+              variant: "subtitle1",
             }}
           />
-          <CardActions disableSpacing>
+          <CardContent>
+            <Typography
+              component="p"
+              color="textSecondary"
+              noWrap
+              variant="caption"
+            >
+              <strong>Date:</strong> {date}
+            </Typography>
+            <Typography
+              component="p"
+              color="textSecondary"
+              noWrap
+              variant="caption"
+            >
+              <strong>Required:</strong> {required ? "Yes" : "No"}
+            </Typography>
+          </CardContent>
+          <CardActions className="disable-padding-top" disableSpacing>
             <IconButton
               hidden={isStringNullOrEmpty(addon.url)}
               href={addon.url || "#"}
@@ -139,7 +177,7 @@ const HomePackAddonComponent = (props: Props) => {
               hidden={isStringNullOrEmpty(addon.description)}
               onClick={handleDescriptionExpandClick}
               style={{
-                marginLeft: "auto"
+                marginLeft: "auto",
               }}
             >
               <ExpandMore />

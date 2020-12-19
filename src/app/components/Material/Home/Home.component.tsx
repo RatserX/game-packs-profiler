@@ -10,7 +10,7 @@ import {
   makeStyles,
   createStyles,
   Theme,
-  Divider
+  Divider,
 } from "@material-ui/core";
 import { Info, ExpandMore, GetApp } from "@material-ui/icons";
 import React, { useEffect } from "react";
@@ -18,56 +18,58 @@ import { connect, ConnectedProps } from "react-redux";
 import "./Home.style.scss";
 import {
   isObjectNullOrEmpty,
-  isStringNullOrEmpty
+  isStringNullOrEmpty,
 } from "../../../helpers/Function.helper";
 import {
-  ConfigurationPack,
-  ConfigurationServer
-} from "../../../helpers/Interface.helper";
+  ProfilePack,
+  ProfileServer,
+} from "../../../store/configuration/Configuration.interface";
 import { State } from "../../../store/Store";
 import {
   setInstance,
-  setInstanceIsEnabled
+  setInstanceIsEnabled,
 } from "../../../store/expand/Expand.action";
 import HomePack from "../HomePack/HomePack.component";
 import HomeServer from "../HomeServer/HomeServer.component";
 
 const mapStateToProperties = (state: State) => ({
+  configurationState: state.configuration,
   expandState: state.expand,
-  profileState: state.profile
+  locationState: state.location,
 });
 
 const mapDispatchToProps = {
   setInstance,
-  setInstanceIsEnabled
+  setInstanceIsEnabled,
 };
 
 const homeConnector = connect(mapStateToProperties, mapDispatchToProps);
 
 type ConnectorProps = ConnectedProps<typeof homeConnector>;
 
-type Props = ConnectorProps & {};
+type Props = ConnectorProps;
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     collapse: {
       transform: "rotate(0deg)",
       transition: theme.transitions.create("transform", {
-        duration: theme.transitions.duration.shortest
-      })
+        duration: theme.transitions.duration.shortest,
+      }),
     },
     expand: {
-      transform: "rotate(180deg)"
-    }
+      transform: "rotate(180deg)",
+    },
   })
 );
 
-const HomeComponent = (props: Props) => {
+const HomeComponent = (props: Props): JSX.Element => {
   const {
+    configurationState,
     expandState,
-    profileState,
+    locationState,
     setInstance,
-    setInstanceIsEnabled
+    setInstanceIsEnabled,
   } = props;
 
   const classes = useStyles();
@@ -78,10 +80,10 @@ const HomeComponent = (props: Props) => {
   useEffect(() => {
     if (isObjectNullOrEmpty(expandState.instance)) {
       setInstance(instanceKey, {
-        isEnabled: false
+        isEnabled: false,
       });
     }
-  }, [expandState, instanceKey, setInstance]);
+  }, [expandState, instanceKey, setInstance, setInstanceIsEnabled]);
 
   const handleDescriptionExpandClick = () => {
     setInstanceIsEnabled(instanceKey, !isEnabled);
@@ -92,18 +94,21 @@ const HomeComponent = (props: Props) => {
       <AppBar color="default" position="fixed">
         <Toolbar>
           <Avatar
-            src={profileState.configuration.game?.image || "images/ph-game.png"}
+            src={
+              configurationState.profile.game?.image ||
+              `${locationState.publicUrl}/images/ph-game.png`
+            }
             style={{
-              marginRight: "16px"
+              marginRight: "16px",
             }}
             variant="rounded"
           />
           <Grid item zeroMinWidth>
             <Typography noWrap variant="subtitle1">
-              {profileState.configuration.game?.name}
+              {configurationState.profile.game?.name}
             </Typography>
             <Typography noWrap variant="subtitle2">
-              {profileState.configuration.game?.version}
+              {configurationState.profile.game?.version}
             </Typography>
           </Grid>
           <Grid
@@ -111,28 +116,28 @@ const HomeComponent = (props: Props) => {
             style={{
               marginLeft: "auto",
               minWidth: "150px",
-              textAlign: "right"
+              textAlign: "right",
             }}
           >
             <IconButton
-              hidden={isStringNullOrEmpty(profileState.configuration.game?.url)}
-              href={profileState.configuration.game?.url || "#"}
+              hidden={isStringNullOrEmpty(configurationState.profile.game?.url)}
+              href={configurationState.profile.game?.url || "#"}
               target="_blank"
             >
               <Info />
             </IconButton>
             <IconButton
               hidden={isStringNullOrEmpty(
-                profileState.configuration.game?.download
+                configurationState.profile.game?.download
               )}
-              href={profileState.configuration.game?.download || "#"}
+              href={configurationState.profile.game?.download || "#"}
               target="_blank"
             >
               <GetApp />
             </IconButton>
             <IconButton
               hidden={isStringNullOrEmpty(
-                profileState.configuration.game?.description
+                configurationState.profile.game?.description
               )}
               className={isEnabled ? classes.expand : classes.collapse}
               onClick={handleDescriptionExpandClick}
@@ -144,7 +149,7 @@ const HomeComponent = (props: Props) => {
         <Collapse in={isEnabled} timeout="auto" unmountOnExit>
           <Toolbar>
             <Typography component="p" color="textSecondary" variant="body2">
-              {profileState.configuration.game?.description}
+              {configurationState.profile.game?.description}
             </Typography>
           </Toolbar>
         </Collapse>
@@ -155,12 +160,8 @@ const HomeComponent = (props: Props) => {
         <Divider />
       </Box>
       <Grid container>
-        {profileState.configuration.packs?.map(
-          (
-            value: ConfigurationPack,
-            index: number,
-            array: ConfigurationPack[]
-          ) => {
+        {configurationState.profile.packs?.map(
+          (value: ProfilePack, index: number) => {
             return <HomePack key={`${index}`} pack={value} />;
           }
         )}
@@ -170,12 +171,8 @@ const HomeComponent = (props: Props) => {
         <Divider />
       </Box>
       <Grid container spacing={2}>
-        {profileState.configuration.servers?.map(
-          (
-            value: ConfigurationServer,
-            index: number,
-            array: ConfigurationServer[]
-          ) => {
+        {configurationState.profile.servers?.map(
+          (value: ProfileServer, index: number) => {
             return <HomeServer key={`${index}`} server={value} />;
           }
         )}

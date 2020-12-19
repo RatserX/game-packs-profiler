@@ -6,7 +6,7 @@ import MaterialLight from "./MaterialLight/MaterialLight";
 enum ThemeType {
   Default,
   MaterialDark,
-  MaterialLight
+  MaterialLight,
 }
 
 type LayoutProps = {
@@ -14,7 +14,7 @@ type LayoutProps = {
   themeType?: ThemeType;
 };
 
-const Layout = ({ themeType, children }: LayoutProps) => {
+const Layout = ({ themeType, children }: LayoutProps): JSX.Element => {
   switch (themeType) {
     case ThemeType.MaterialDark:
       require("./MaterialDark/_styles.scss");

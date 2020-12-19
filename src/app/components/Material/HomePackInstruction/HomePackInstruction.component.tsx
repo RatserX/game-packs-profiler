@@ -4,8 +4,9 @@ import {
   ListItem,
   ListItemText,
   ListItemAvatar,
-  Typography
+  Typography,
 } from "@material-ui/core";
+import HtmlReactParser from "html-react-parser";
 import { Label } from "@material-ui/icons";
 
 type Props = {
@@ -13,15 +14,15 @@ type Props = {
   id: string;
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   smallAvatar: {
     width: theme.spacing(3),
-    height: theme.spacing(3)
-  }
+    height: theme.spacing(3),
+  },
 }));
 
-const HomePackAddon = (props: Props) => {
-  const { instruction, id } = props;
+const HomePackAddon = (props: Props): JSX.Element => {
+  const { instruction } = props;
   const classes = useStyles();
 
   return (
@@ -31,7 +32,7 @@ const HomePackAddon = (props: Props) => {
       </ListItemAvatar>
       <ListItemText>
         <Typography component="p" variant="body2">
-          {instruction}
+          {HtmlReactParser(instruction)}
         </Typography>
       </ListItemText>
     </ListItem>

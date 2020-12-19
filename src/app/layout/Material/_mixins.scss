@@ -117,6 +117,14 @@
         color: $on-error;
     }
 
+    .disable-padding-bottom {
+        padding-bottom: 0 !important
+    }
+    
+    .disable-padding-top {
+        padding-top: 0 !important
+    }
+
     .mdc-typography-styles-headline1 {
         @include mdc-typography-styles(96);
     };

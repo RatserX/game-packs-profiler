@@ -1,9 +1,9 @@
+import { InstanceValue } from "./Expand.interface";
 import {
   ExpandAction,
   SET_INSTANCE,
-  SET_INSTANCE_IS_ENABLED
+  SET_INSTANCE_IS_ENABLED,
 } from "./Expand.type";
-import { InstanceValue } from "../../helpers/Interface.helper";
 
 const setInstance = (
   instanceKey: string,
@@ -12,7 +12,7 @@ const setInstance = (
   return {
     type: SET_INSTANCE,
     instanceKey,
-    instanceValue
+    instanceValue,
   };
 };
 
@@ -23,7 +23,7 @@ const setInstanceIsEnabled = (
   return {
     type: SET_INSTANCE_IS_ENABLED,
     instanceKey,
-    instanceValueIsEnabled
+    instanceValueIsEnabled,
   };
 };
 

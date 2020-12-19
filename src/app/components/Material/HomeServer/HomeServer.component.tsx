@@ -10,19 +10,31 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  CardContent
+  CardContent,
 } from "@material-ui/core";
 import { SettingsEthernet, SettingsInputAntenna } from "@material-ui/icons";
+import { connect, ConnectedProps } from "react-redux";
 import "./HomeServer.style.scss";
-import { ConfigurationServer } from "../../../helpers/Interface.helper";
+import { ProfileServer } from "../../../store/configuration/Configuration.interface";
+import { State } from "../../../store/Store";
 
-type Props = {
+const mapStateToProperties = (state: State) => ({
+  locationState: state.location,
+});
+
+const mapDispatchToProps = {};
+
+const appConnector = connect(mapStateToProperties, mapDispatchToProps);
+
+type ConnectorProps = ConnectedProps<typeof appConnector>;
+
+type Props = ConnectorProps & {
   key: string;
-  server: ConfigurationServer;
+  server: ProfileServer;
 };
 
-const HomeServer = (props: Props) => {
-  const { server } = props;
+const HomeServerComponent = (props: Props): JSX.Element => {
+  const { locationState, server } = props;
 
   return (
     <Grid className="home-server" item xs={12} sm={6}>
@@ -31,17 +43,20 @@ const HomeServer = (props: Props) => {
           <CardHeader
             avatar={
               <Avatar
-                src={server.image || "images/ph-server.png"}
+                src={
+                  server.image ||
+                  `${locationState.publicUrl}/images/ph-server.png`
+                }
                 variant="rounded"
               />
             }
             subheader={server.description}
             subheaderTypographyProps={{
-              variant: "subtitle2"
+              variant: "subtitle2",
             }}
             title={server.name}
             titleTypographyProps={{
-              variant: "subtitle1"
+              variant: "subtitle1",
             }}
           />
           <CardContent>
@@ -87,5 +102,7 @@ const HomeServer = (props: Props) => {
     </Grid>
   );
 };
+
+const HomeServer = appConnector(HomeServerComponent);
 
 export default HomeServer;
