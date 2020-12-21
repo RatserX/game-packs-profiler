@@ -43,9 +43,9 @@ const mapDispatchToProps = {
   setInstanceIsEnabled,
 };
 
-const homeConnector = connect(mapStateToProperties, mapDispatchToProps);
+const appConnector = connect(mapStateToProperties, mapDispatchToProps);
 
-type ConnectorProps = ConnectedProps<typeof homeConnector>;
+type ConnectorProps = ConnectedProps<typeof appConnector>;
 
 type Props = ConnectorProps;
 
@@ -182,6 +182,6 @@ const HomeComponent = (props: Props): JSX.Element => {
   );
 };
 
-const Home = homeConnector(HomeComponent);
+const Home = appConnector(HomeComponent);
 
 export default Home;
