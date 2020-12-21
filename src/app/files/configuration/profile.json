@@ -29,6 +29,15 @@
                     "version": "0.3.0"
                 },
                 {
+                    "description": "Apotheosis is a mod about improving the vanilla experience while attempting to stay true to the base game.  It adds new potions, enchantments, dangers, mechanics, and other interesting things that greatly improve the Minecraft experience.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/apotheosis/download/3095843",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/190/392/64/64/636855526449930608.png",
+                    "name": "Apotheosis",
+                    "timestamp": 1608443872,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
+                    "version": "4.4.1"
+                },
+                {
                     "description": "Biomes O' Plenty is an expansive biome mod for Minecraft that adds a slew of new, unique biomes to the Overworld and Nether!  To go along with the new biomes, it adds new plants, flowers, trees, building blocks, and much more!",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/download/3102726",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/218/291/64/64/637010824665411754.png",
@@ -72,6 +81,15 @@
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone",
                     "version": "6.2.0"
+                },
+                {
+                    "description": "A simple Minecraft Forge mod that speeds up leaf decay after you cut down the wood in a tree. By default it will only take about five seconds before all leaves are gone.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay/download/3052146",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/18/699/64/64/635683366119611662.png",
+                    "name": "Fast Leaf Decay",
+                    "timestamp": 1608443872,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay",
+                    "version": "v25"
                 },
                 {
                     "description": "This mod does a couple things relating to the vanilla furnace, blast furnace, and smoker so that they run faster during their update method, improving TPS.",
