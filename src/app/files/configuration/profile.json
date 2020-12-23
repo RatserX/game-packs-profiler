@@ -16,7 +16,7 @@
             "name": "Forge - Manual Installation",
             "timestamp": 1608443872,
             "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.3.html",
-            "version": "34.1.9",
+            "version": "34.1.42",
             "addons": [
                 {
                     "description": "Simplified AI modification mod focused on performance and low-level modifications to AIs in the game. Picking up the slack for the base game and improving it for a modded ecosystem. Handling common problems such as too many animals, performance hits from swarms of zombies, and simple remove tasks skipped by larger AI improvement mods.",
@@ -75,27 +75,49 @@
                 },
                 {
                     "description": "\" Corail Tombstone keeps you from losing your belongings on death, with many features of survivability and dimensional teleportation, in a medieval fantasy atmosphere related to the grave's souls. \"",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/3140826",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/download/3146459",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/130/354/64/64/636459742199274923.jpeg",
                     "name": "Corail Tombstone",
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/corail-tombstone",
-                    "version": "6.2.0"
+                    "version": "6.2.2"
                 },
                 {
                     "description": "A simple Minecraft Forge mod that speeds up leaf decay after you cut down the wood in a tree. By default it will only take about five seconds before all leaves are gone.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay/download/3052146",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/18/699/64/64/635683366119611662.png",
                     "name": "Fast Leaf Decay",
+                    "required": false,
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay",
                     "version": "v25"
+                },
+                {
+                    "description": "Fabric API is the core library for the most common hooks and intercompatibility measures utilized by mods using the Fabric toolchain",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/fabric-api/download/3097415",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/185/822/64/64/636829723898798601.png",
+                    "name": "Fabric API",
+                    "required": false,
+                    "timestamp": 1608443872,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api",
+                    "version": "0.25.0 build 415"
+                },
+                {
+                    "description": "A simple mod that adds seasons to the game, dynamically changing biomes as you play.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/fabric-seasons/download/3117091",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/313/575/64/64/637409352215573686.png",
+                    "name": "Fabric Seasons",
+                    "required": false,
+                    "timestamp": 1608443872,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-seasons",
+                    "version": "1.0.3-BETA"
                 },
                 {
                     "description": "This mod does a couple things relating to the vanilla furnace, blast furnace, and smoker so that they run faster during their update method, improving TPS.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace/download/3069048",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/164/243/64/64/636686097562167838.png",
                     "name": "FastFurnace",
+                    "required": false,
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/fastfurnace",
                     "version": "4.3.0"
@@ -134,7 +156,6 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/maessentials/download/3061859",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/283/666/64/64/637294084953067259.png",
                     "name": "Ma Essentials",
-                    "required": false,
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/maessentials",
                     "version": "3.4.0"
@@ -153,7 +174,6 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/custom-game-rules/download/3105223",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/275/700/64/64/637263098984560016.png",
                     "name": "More Powerful Game Rules",
-                    "required": false,
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/custom-game-rules",
                     "version": "1.0.2"
@@ -216,6 +236,15 @@
                     "version": "1.0.0"
                 },
                 {
+                    "description": "Holds shared code for use in my mods.",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/placebo/download/3092113",
+                    "image": "https://media.forgecdn.net/avatars/thumbnails/134/260/64/64/636490526725752670.png",
+                    "name": "Placebo",
+                    "timestamp": 1608443872,
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/placebo",
+                    "version": "4.3.3"
+                },
+                {
                     "description": "RandomPatches is a mod that contains a bunch of miscellaneous patches for Minecraft. RandomPatches only contains features that require ASM transformers. Tweaks that don't require ASM transformers go in RandomTweaks, which I recommend as a companion mod.",
                     "download": "https://www.curseforge.com/minecraft/mc-mods/randompatches/download/3139304",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/137/948/64/64/636518346385385655.png",
@@ -227,12 +256,13 @@
                 },
                 {
                     "description": "Serene Seasons is a Minecraft mod that adds seasons.  Grass and foliage colors will change throughout the year, and in the winter, temperatures will shift and allow for snow to fall in some biomes that don't normally receive any.  Seasons also affect various other features, like crop growth (Different crops are limited to different seasons), weather (More rain in Spring, more storms in Summer, etc.), and more!",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/serene-seasons/download/3141812",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/serene-seasons/download/3145776",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/241/247/64/64/637126527280083825.png",
                     "name": "Serene Seasons",
+                    "required": false,
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/serene-seasons",
-                    "version": "4.0.0.79"
+                    "version": "4.0.0.80"
                 },
                 {
                     "description": "Put your most frequently used items within convenient reach. Storage Drawers borrows ideas from Jabba and Bibliocraft, resulting in a highly functional, compact, and aesthetic storage solution that is meant to complement rather than replace those mods.",
@@ -245,7 +275,7 @@
                 },
                 {
                     "description": "[Forge] This mod adds tall towers in your world, inspired by The Legend Of Zelda : Breath Of The Wild.",
-                    "download": "https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild/download/3103750",
+                    "download": "https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild/download/3103749",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/310/342/64/64/637398464252136645.png",
                     "name": "Towers Of The Wild",
                     "required": false,
@@ -258,6 +288,7 @@
                     "download": "https://www.curseforge.com/minecraft/mc-mods/voxelmap/download/3058828",
                     "image": "https://media.forgecdn.net/avatars/thumbnails/11/698/64/64/635499892408422072.jpeg",
                     "name": "VoxelMap",
+                    "required": false,
                     "timestamp": 1608443872,
                     "url": "https://www.curseforge.com/minecraft/mc-mods/voxelmap",
                     "version": "1.10.11"
@@ -285,7 +316,7 @@
             "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
-            "name": "Forge - Twitch Installation",
+            "name": "Forge - CurseForge Installation",
             "timestamp": 1583113389,
             "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html",
             "version": "14.23.5.2847",
