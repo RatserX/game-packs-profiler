@@ -14,7 +14,7 @@ import {
   createStyles,
   Box,
 } from "@material-ui/core";
-import { GetApp, ExpandMore, Info } from "@material-ui/icons";
+import { Book, GetApp, ExpandMore, Info } from "@material-ui/icons";
 import { connect, ConnectedProps } from "react-redux";
 import "./HomePackAddon.style.scss";
 import {
@@ -159,6 +159,13 @@ const HomePackAddonComponent = (props: Props): JSX.Element => {
           </CardContent>
           <CardActions className="disable-padding-top" disableSpacing>
             <IconButton
+              hidden={isStringNullOrEmpty(addon.download)}
+              href={addon.download || "#"}
+              target="_blank"
+            >
+              <GetApp />
+            </IconButton>
+            <IconButton
               hidden={isStringNullOrEmpty(addon.url)}
               href={addon.url || "#"}
               target="_blank"
@@ -166,11 +173,11 @@ const HomePackAddonComponent = (props: Props): JSX.Element => {
               <Info />
             </IconButton>
             <IconButton
-              hidden={isStringNullOrEmpty(addon.download)}
-              href={addon.download || "#"}
+              hidden={isStringNullOrEmpty(addon.wiki)}
+              href={addon.wiki || "#"}
               target="_blank"
             >
-              <GetApp />
+              <Book />
             </IconButton>
             <IconButton
               className={isEnabled ? classes.expand : classes.collapse}

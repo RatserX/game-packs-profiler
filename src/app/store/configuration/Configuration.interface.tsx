@@ -35,6 +35,7 @@ export interface ProfilePackAddon {
   timestamp: number;
   url: string;
   version: string;
+  wiki: string;
 }
 
 export interface ProfileServer {
