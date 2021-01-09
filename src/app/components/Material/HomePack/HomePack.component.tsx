@@ -49,18 +49,18 @@ const HomePackComponent = (props: Props): JSX.Element => {
             action={
               <div>
                 <IconButton
-                  hidden={isStringNullOrEmpty(pack.url)}
-                  href={pack.url || "#"}
-                  target="_blank"
-                >
-                  <Info />
-                </IconButton>
-                <IconButton
                   hidden={isStringNullOrEmpty(pack.download)}
                   href={pack.download || "#"}
                   target="_blank"
                 >
                   <GetApp />
+                </IconButton>
+                <IconButton
+                  hidden={isStringNullOrEmpty(pack.url)}
+                  href={pack.url || "#"}
+                  target="_blank"
+                >
+                  <Info />
                 </IconButton>
               </div>
             }
