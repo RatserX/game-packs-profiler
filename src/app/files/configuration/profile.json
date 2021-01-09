@@ -4,7 +4,7 @@
         "download": "https://tlauncher.org/installer",
         "image": "https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/menu/menu-buy.gif",
         "name": "Minecraft",
-        "timestamp": 1581794539,
+        "timestamp": 1608443872,
         "url": "https://tlauncher.org/en/",
         "version": "1.16.4"
     },
@@ -363,25 +363,25 @@
         },
         {
             "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
-            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
+            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
-            "name": "Forge - CurseForge Installation",
-            "timestamp": 1583113389,
-            "url": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html",
-            "version": "14.23.5.2847",
+            "name": "Forge - Manual Installation",
+            "timestamp": 1608443872,
+            "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.4.html",
+            "version": "35.1.36",
             "addons": [
                 {
-                    "description": "Minecraft Custom Profile with all the addons used in the server",
-                    "download": "https://drive.google.com/open?id=1gXI-K-1MMiRKZpM41tiYUwEFYLmJPXjD",
+                    "description": "Minecraft Custom Profile with all the completed list of addons used in the server",
+                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_completed.json",
                     "image": "",
                     "name": "Custom Profile",
                     "timestamp": 1581794539,
                     "url": "",
-                    "version": "All"
+                    "version": "Completed"
                 },
                 {
-                    "description": "Minecraft Custom Profile with all the required addons needed to get in the server",
-                    "download": "https://drive.google.com/open?id=1b0c0FeHJNbTHBOZ9huN00E7hnHH5P-Fj",
+                    "description": "Minecraft Custom Profile with only the required list of addons used in the server",
+                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_required.json",
                     "image": "",
                     "name": "Custom Profile",
                     "timestamp": 1581794539,
@@ -390,8 +390,8 @@
                 }
             ],
             "instructions": [
-                "Open Twitch",
-                "Go to the Mods section",
+                "Open CurseForge",
+                "Go to Minecraft game",
                 "Go to Create Custom Profile",
                 "Import the downloaded profile",
                 "Play"
