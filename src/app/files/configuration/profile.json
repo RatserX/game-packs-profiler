@@ -60,7 +60,7 @@
                     "description": "Analyzer for Minecraft instance profiles.",
                     "download": "https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip",
                     "image": "https://raw.githubusercontent.com/RatserX/ratserx.github.io/master/public/images/minecraft-instance-analyzer.gif",
-                    "name": "Minecraft Instance Analyzer",
+                    "name": "Analyzer",
                     "timestamp": 1608443872,
                     "url": "https://github.com/RatserX/minecraft-instance-analyzer",
                     "version": "Release",
