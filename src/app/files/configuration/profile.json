@@ -12,6 +12,37 @@
         {
             "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
+            "image": "",
+            "name": "Forge - Automatic Installation",
+            "timestamp": 1608443872,
+            "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.4.html",
+            "version": "35.1.36",
+            "addons": [
+                {
+                    "description": "Analyzer for Minecraft instance profiles.",
+                    "download": "https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip",
+                    "image": "https://raw.githubusercontent.com/RatserX/ratserx.github.io/master/public/images/minecraft-instance-analyzer.gif",
+                    "name": "Minecraft Instance Analyzer",
+                    "timestamp": 1608443872,
+                    "url": "https://github.com/RatserX/minecraft-instance-analyzer",
+                    "version": "Release",
+                    "wiki": "https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md"
+                }
+            ],
+            "instructions": [
+                "Download the Minecraft Instance Analyzer",
+                "Check the wiki for additional information",
+                "Run the program",
+                "Select which profile to use",
+                "Select the download location",
+                "Choose whether to install individual files or the complete set",
+                "Move the downloaded files to the appropiate mods folder",
+                "Play"
+            ]
+        },
+        {
+            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
             "name": "Forge - Manual Installation",
             "timestamp": 1608443872,
@@ -371,7 +402,7 @@
             "version": "35.1.36",
             "addons": [
                 {
-                    "description": "Minecraft Custom Profile with all the completed list of addons used in the server",
+                    "description": "Minecraft Custom Profile with all the completed list of addons used in the server.",
                     "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_completed.json",
                     "image": "",
                     "name": "Custom Profile",
@@ -380,7 +411,7 @@
                     "version": "Completed"
                 },
                 {
-                    "description": "Minecraft Custom Profile with only the required list of addons used in the server",
+                    "description": "Minecraft Custom Profile with only the required list of addons used in the server.",
                     "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_required.json",
                     "image": "",
                     "name": "Custom Profile",
