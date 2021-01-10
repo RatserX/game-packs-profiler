@@ -30,14 +30,14 @@
                 }
             ],
             "instructions": [
-                "Download the Minecraft Instance Analyzer",
-                "Check the wiki for additional information",
+                "Download and install <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip\"><strong>Minecraft Instance Analyzer</strong></a>",
+                "Check the <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md\"><strong>README</strong></a> for additional information",
                 "Run the program",
                 "Select which profile to use",
                 "Select the download location",
                 "Choose whether to install individual files or the complete set",
-                "Move the downloaded files to the appropiate mods folder",
-                "Play"
+                "Move the downloaded addons to the mods folder",
+                "Run the game"
             ]
         },
         {
@@ -70,11 +70,12 @@
                 }
             ],
             "instructions": [
-                "Open CurseForge",
-                "Go to Minecraft game",
-                "Go to Create Custom Profile",
+                "Download and install <a href=\"https://curseforge.overwolf.com/\"><strong>CurseForge</strong></a>",
+                "Run the program",
+                "Select the <strong>\"Minecraft\"</strong> button",
+                "Select the <strong>\"Create Custom Profile\"</strong> button",
                 "Import the downloaded profile",
-                "Play"
+                "Run the game"
             ]
         },
         {
@@ -422,7 +423,8 @@
             ],
             "instructions": [
                 "Download and install <a href=\"https://tlauncher.org/\"><strong>TLauncher</strong></a>",
-                "Open the launcher and choose the Forge version",
+                "Run the program",
+                "Choose the Forge version",
                 "Select the <strong>\"Install\"</strong> button and wait for the first run",
                 "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\)",
                 "Move the downloaded addons to the mods folder",
