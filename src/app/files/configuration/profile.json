@@ -39,7 +39,7 @@
                 }
             ],
             "instructions": [
-                "Download and install <a href=\"https://curseforge.overwolf.com/\"><strong>CurseForge</strong></a>",
+                "Download and install <a href=\"https://curseforge.overwolf.com/\" target=\"_blank\"><strong>CurseForge</strong></a>",
                 "Run the program",
                 "Select the <strong>\"Minecraft\"</strong> button",
                 "Select the <strong>\"Create Custom Profile\"</strong> button",
@@ -68,14 +68,14 @@
                 }
             ],
             "instructions": [
-                "Download and install <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip\"><strong>Minecraft Instance Analyzer</strong></a>",
-                "Check the <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md\"><strong>ReadMe</strong></a> for additional information",
+                "Download and install <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip\" target=\"_blank\"><strong>Minecraft Instance Analyzer</strong></a>",
+                "Check the <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md\" target=\"_blank\"><strong>ReadMe</strong></a> for additional information",
                 "Run the program",
                 "Select which profile to use",
                 "Select the download location",
                 "Choose whether to install individual files or the complete set",
                 "Wait until the program finishes downloading the selected addons",
-                "Download and install <a href=\"https://tlauncher.org/\"><strong>TLauncher</strong></a>",
+                "Download and install <a href=\"https://tlauncher.org/\" target=\"_blank\"><strong>TLauncher</strong></a>",
                 "Run the program",
                 "Choose the appropriate Forge version",
                 "Select the <strong>\"Install\"</strong> button and wait for the first run",
@@ -428,7 +428,7 @@
                 }
             ],
             "instructions": [
-                "Download and install <a href=\"https://tlauncher.org/\"><strong>TLauncher</strong></a>",
+                "Download and install <a href=\"https://tlauncher.org/\" target=\"_blank\"><strong>TLauncher</strong></a>",
                 "Run the program",
                 "Choose the appropriate Forge version",
                 "Select the <strong>\"Install\"</strong> button and wait for the first run",
