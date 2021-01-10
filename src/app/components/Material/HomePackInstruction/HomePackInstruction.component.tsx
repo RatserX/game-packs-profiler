@@ -26,7 +26,7 @@ const HomePackAddon = (props: Props): JSX.Element => {
   const classes = useStyles();
 
   return (
-    <ListItem>
+    <ListItem className="disable-padding-bottom disable-padding-top">
       <ListItemAvatar>
         <Label />
       </ListItemAvatar>
