@@ -396,7 +396,7 @@
             "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
-            "name": "Forge - Manual Installation",
+            "name": "Forge - Profile Installation",
             "timestamp": 1608443872,
             "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.4.html",
             "version": "35.1.36",
