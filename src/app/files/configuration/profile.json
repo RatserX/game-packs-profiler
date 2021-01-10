@@ -44,6 +44,43 @@
             "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
+            "name": "Forge - Managed Installation",
+            "timestamp": 1608443872,
+            "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.4.html",
+            "version": "35.1.36",
+            "addons": [
+                {
+                    "description": "Minecraft Custom Profile with all the completed list of addons used in the server.",
+                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_completed.json",
+                    "image": "",
+                    "name": "Custom Profile",
+                    "required": false,
+                    "timestamp": 1581794539,
+                    "url": "",
+                    "version": "Completed"
+                },
+                {
+                    "description": "Minecraft Custom Profile with only the required list of addons used in the server.",
+                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_required.json",
+                    "image": "",
+                    "name": "Custom Profile",
+                    "timestamp": 1581794539,
+                    "url": "",
+                    "version": "Required"
+                }
+            ],
+            "instructions": [
+                "Open CurseForge",
+                "Go to Minecraft game",
+                "Go to Create Custom Profile",
+                "Import the downloaded profile",
+                "Play"
+            ]
+        },
+        {
+            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
+            "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
             "name": "Forge - Manual Installation",
             "timestamp": 1608443872,
             "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.4.html",
@@ -390,42 +427,6 @@
                 "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\)",
                 "Move the downloaded addons to the mods folder",
                 "Run the game"
-            ]
-        },
-        {
-            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
-            "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
-            "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
-            "name": "Forge - Profile Installation",
-            "timestamp": 1608443872,
-            "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.4.html",
-            "version": "35.1.36",
-            "addons": [
-                {
-                    "description": "Minecraft Custom Profile with all the completed list of addons used in the server.",
-                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_completed.json",
-                    "image": "",
-                    "name": "Custom Profile",
-                    "timestamp": 1581794539,
-                    "url": "",
-                    "version": "Completed"
-                },
-                {
-                    "description": "Minecraft Custom Profile with only the required list of addons used in the server.",
-                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_required.json",
-                    "image": "",
-                    "name": "Custom Profile",
-                    "timestamp": 1581794539,
-                    "url": "",
-                    "version": "Required"
-                }
-            ],
-            "instructions": [
-                "Open CurseForge",
-                "Go to Minecraft game",
-                "Go to Create Custom Profile",
-                "Import the downloaded profile",
-                "Play"
             ]
         }
     ],
