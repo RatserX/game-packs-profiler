@@ -68,20 +68,15 @@
                 }
             ],
             "instructions": [
-                "Download and install <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip\" target=\"_blank\"><strong>Minecraft Instance Analyzer</strong></a>",
-                "Check this <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
-                "Run the program",
-                "Select which profile to use",
-                "Select the download location",
-                "Choose whether to install individual files or the complete set",
-                "Wait until the program finishes downloading the selected addons",
                 "Download and install <a href=\"https://tlauncher.org/\" target=\"_blank\"><strong>TLauncher</strong></a>",
                 "Check this <a href=\"https://tlauncher.org/en/install-mods.html\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
                 "Run the program",
-                "Choose the appropriate Forge version",
-                "Select the <strong>\"Install\"</strong> button and wait for the first run",
-                "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\)",
-                "Move the downloaded addons to the mods folder",
+                "Change the version from <strong>\"Latest release\"</strong> to <strong>\"Forge\"</strong>",
+                "Select the <strong>\"Install\"</strong> button and wait until the download process ends",
+                "Download and install <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/archive/main.zip\" target=\"_blank\"><strong>Minecraft Instance Analyzer</strong></a>",
+                "Check this <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
+                "Run either main.bat (Windows) or main.sh (Linux) as administrator",
+                "Follow the program instructions",
                 "Run the game"
             ]
         },
@@ -432,9 +427,9 @@
                 "Download and install <a href=\"https://tlauncher.org/\" target=\"_blank\"><strong>TLauncher</strong></a>",
                 "Check this <a href=\"https://tlauncher.org/en/install-mods.html\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
                 "Run the program",
-                "Choose the appropriate Forge version",
-                "Select the <strong>\"Install\"</strong> button and wait for the first run",
-                "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\)",
+                "Change the version from <strong>\"Latest release\"</strong> to <strong>\"Forge\"</strong>",
+                "Select the <strong>\"Install\"</strong> button and wait until the download process ends",
+                "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\) or create the folder if it does not exists",
                 "Move the downloaded addons to the mods folder",
                 "Run the game"
             ]
