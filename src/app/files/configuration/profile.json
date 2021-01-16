@@ -20,9 +20,9 @@
             "addons": [
                 {
                     "description": "Minecraft Custom Profile with all the completed list of addons used in the server.",
-                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_completed.json",
+                    "download": "https://www.mediafire.com/file/i9shurtmg5i36o5/%2528Completed%2529_Forge_1.16.4.zip/file",
                     "image": "",
-                    "name": "Custom Profile",
+                    "name": "Custom Profile (1.16.4-35.1.36)",
                     "required": false,
                     "timestamp": 1581794539,
                     "url": "",
@@ -30,9 +30,9 @@
                 },
                 {
                     "description": "Minecraft Custom Profile with only the required list of addons used in the server.",
-                    "download": "https://raw.githubusercontent.com/RatserX/minecraft-instance-parse/main/public/profile/minecraftinstance_forge_1164_required.json",
+                    "download": "https://www.mediafire.com/file/cxemhzkzpdqtozm/%2528Required%2529_Forge_1.16.4.zip/file",
                     "image": "",
-                    "name": "Custom Profile",
+                    "name": "Custom Profile (1.16.4-35.1.36)",
                     "timestamp": 1581794539,
                     "url": "",
                     "version": "Required"
@@ -44,7 +44,8 @@
                 "Select the <strong>\"Minecraft\"</strong> button",
                 "Select the <strong>\"Create Custom Profile\"</strong> button",
                 "Import the downloaded profile",
-                "Run the game"
+                "Run the game",
+                "<img src=\"https://ratserx.github.io/public/images/forge-automatic-installation-premium.gif\">"
             ]
         },
         {
@@ -77,7 +78,8 @@
                 "Check this <a href=\"https://github.com/RatserX/minecraft-instance-analyzer/blob/main/README.md\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
                 "Run either main.bat (Windows) or main.sh (Linux) as administrator",
                 "Follow the program instructions",
-                "Run the game"
+                "Run the game",
+                "<img src=\"https://ratserx.github.io/public/images/forge-automatic-installation-regular.gif\">"
             ]
         },
         {
