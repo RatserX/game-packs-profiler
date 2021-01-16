@@ -426,14 +426,16 @@
                 }
             ],
             "instructions": [
-                "Download and install <a href=\"https://tlauncher.org/\" target=\"_blank\"><strong>TLauncher</strong></a>",
-                "Check this <a href=\"https://tlauncher.org/en/install-mods.html\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
+                "Download and install <a href=\"https://launcher.mojang.com/download/MinecraftInstaller.msi\" target=\"_blank\"><strong>Minecraft</strong></a>",
+                "Check this <a href=\"https://www.pcgamesn.com/minecraft/how-to-install-minecraft-forge\" target=\"_blank\"><strong>Webpage</strong></a> for additional information",
+                "Download and install <a href=\"http://files.minecraftforge.net/maven/net/minecraftforge/forge/\" target=\"_blank\"><strong>Forge</strong></a>",
+                "Select the <strong>\"Installer\"</strong> button corresponding to the appropiate version",
                 "Run the program",
-                "Change the version from <strong>\"Latest release\"</strong> to <strong>\"Forge\"</strong>",
-                "Select the <strong>\"Install\"</strong> button and wait until the download process ends",
-                "Select the <strong>\"Open Folder\"</strong> button and go to the mods folder (%AppData%\\.minecraft\\mods\\) or create the folder if it does not exists",
+                "Follow the program instructions",
+                "Go to the mods folder (%AppData%\\.minecraft\\mods\\) or create the folder if it does not exists",
                 "Move the downloaded addons to the mods folder",
-                "Run the game"
+                "Run the game",
+                "<strong><u>Reference</u></strong><br><a href=\"https://ratserx.github.io/public/images/forge-manual-installation.gif\" target=\"_blank\"><img src=\"https://ratserx.github.io/public/images/forge-manual-installation.gif\" style=\"max-height: 300px; max-width: 100%\">"
             ]
         }
     ],
