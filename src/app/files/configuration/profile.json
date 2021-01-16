@@ -45,7 +45,7 @@
                 "Select the <strong>\"Create Custom Profile\"</strong> button",
                 "Import the downloaded profile",
                 "Run the game",
-                "<a href=\"https://ratserx.github.io/public/images/forge-automatic-installation-premium.gif\" target=\"_blank\"><img height=\"300\" src=\"https://ratserx.github.io/public/images/forge-automatic-installation-premium.gif\">"
+                "<strong><u>Reference</u></strong><br><a href=\"https://ratserx.github.io/public/images/forge-automatic-installation-premium.gif\" target=\"_blank\"><img src=\"https://ratserx.github.io/public/images/forge-automatic-installation-premium.gif\" style=\"max-height: 300px; max-width: 100%\">"
             ]
         },
         {
@@ -79,7 +79,7 @@
                 "Run either main.bat (Windows) or main.sh (Linux) as administrator",
                 "Follow the program instructions",
                 "Run the game",
-                "<a href=\"https://ratserx.github.io/public/images/forge-automatic-installation-regular.gif\" target=\"_blank\"><img height=\"300\" src=\"https://ratserx.github.io/public/images/forge-automatic-installation-regular.gif\">"
+                "<strong><u>Reference</u></strong><br><a href=\"https://ratserx.github.io/public/images/forge-automatic-installation-regular.gif\" target=\"_blank\"><img src=\"https://ratserx.github.io/public/images/forge-automatic-installation-regular.gif\" style=\"max-height: 300px; max-width: 100%\">"
             ]
         },
         {
