@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import environment from "../environment/environment";
 import { State } from "./store/Store";
@@ -29,7 +29,7 @@ type Props = ConnectorProps;
 const AppComponent = (props: Props) => {
   const { configurationState, locationState, setProfile, setPublicUrl } = props;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isObjectNullOrEmpty(configurationState.profile)) {
       setProfile("profile.json");
     }
