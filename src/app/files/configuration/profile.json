@@ -10,7 +10,7 @@
     },
     "packs": [
         {
-            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "description": "Follow these instructions if you are using the Premium version of Minecraft<br><br>Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
             "name": "Forge - Automatic Installation (Premium)",
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "description": "Follow these instructions if you are using the Cracked version of Minecraft<br><br>Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
             "name": "Forge - Automatic Installation (Regular)",
@@ -83,7 +83,7 @@
             ]
         },
         {
-            "description": "Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
+            "description": "Follow these instructions if you are using either the Cracked or Premium version of Minecraft<br><br>Minecraft Forge is a modding API (Application Programming Interface), which makes it easier to create mods, and also make sure mods are compatible with each other.",
             "download": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.36/forge-1.16.4-35.1.36-installer.jar",
             "image": "https://avatars2.githubusercontent.com/u/1390178?s=200&v=4",
             "name": "Forge - Manual Installation",
@@ -441,17 +441,17 @@
     ],
     "servers": [
         {
-            "address": "192.160.12.12",
-            "description": "A server for the game Minecraft - Spigot",
+            "address": "227.236.125.209",
+            "description": "A server for the game Minecraft - Forge",
             "image": "",
-            "name": "Minecraft Server",
+            "name": "Forge Server 1.16.4",
             "port": 25565
         },
         {
             "address": "192.160.12.12",
             "description": "A server for the game Minecraft - SpongeForge",
             "image": "",
-            "name": "Forge Server",
+            "name": "SpongeForge Server 1.12.2",
             "port": 25566
         }
     ]
